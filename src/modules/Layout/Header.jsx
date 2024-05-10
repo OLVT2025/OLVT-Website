@@ -73,11 +73,13 @@ function Header(props) {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar
-        position="static"
+        position="fixed"
         sx={{
           boxShadow: "none",
-          bgcolor: "#ffffff",
-          marginTop: { xs: "1em", md: "2em" },
+          bgcolor: "#fff",
+          paddingTop: { xs: "1em", md: "2em" },
+          paddingLeft: { md: "8rem" },
+          paddingRight: { md: "8rem" },
         }}
       >
         <Toolbar

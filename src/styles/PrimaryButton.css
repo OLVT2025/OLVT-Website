@@ -9,24 +9,23 @@
   animation-iteration-count: infinite; /* Infinite loop */
 }
 
-@keyframes example {
-  /* 0% {
+
+@keyframes gradientAnimation {
+  0% {
     background-image: linear-gradient(90deg, #ffd60c, #f15d27, #f15d27);
     transition-duration: 600s;
-  }
-  25% {
-    background-image: linear-gradient(90deg, #f15d27, #ffd60c, #ffd60c);
   }
   50% {
     background-image: linear-gradient(90deg, #ffd60c, #f15d27, #f15d27);
   }
   100% {
     background-image: linear-gradient(90deg, #f15d27, #ffd60c, #ffd60c);
-  } */
-  0%, 100% {
-    background-image: linear-gradient(90deg, #ffd60c, #f15d27, #f15d27); /* Initial and final state */
-  }
-  50% {
-    background-image: linear-gradient(90deg, #f15d27, #ffd60c, #ffd60c); /* Midway state */
   }
 }
+
+
+
+
+
+
+

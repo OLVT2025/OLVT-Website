@@ -1,5 +1,6 @@
 import { MemoizedExpertiseCard } from "@/SDK/cards/ExpertiseCard";
 import imageUrls from "@/constants/imageUrls";
+import { MemoizedCustomLayOut } from "@/modules/GenericComponents/CustomLayOut";
 import { MemoizedIndustriesWeServe } from "@/modules/Home/IndustriesWeServe";
 import { MemoizedOurExpertise } from "@/modules/Home/OurExpertise";
 import { MemoizedOurTeam } from "@/modules/Home/OurTeam";
@@ -7,8 +8,7 @@ import { MemoizedOurVision } from "@/modules/Home/OurVision";
 import { MemoizedWelcomeSection } from "@/modules/Home/WelcomSection";
 import { MemoizedFooter } from "@/modules/Layout/Footer";
 import { MemoizedHeader } from "@/modules/Layout/Header";
-import React, { useRef } from "react";
-import { animateScroll } from "react-scroll";
+import React from "react";
 
 const expertiseData = [
   {
@@ -53,42 +53,40 @@ const expertiseData = [
 
 export default function Home() {
   return (
-    <>
-      <div className="md:mx-32 !important">
-        <MemoizedHeader />
-      </div>
-      <div className="text-[#0A0A0A]">
-        <div className="md:mx-32 !important">
-          <MemoizedWelcomeSection
-            title={
-              " Welcome to Orange League Your Digital Transformation Partner"
-            }
-            paragraph={` We're here to help you thrive in the digital landscape. With our expertise and dedication, we'll collaborate closely with you to develop tailored solutions that drive results.`}
-            imageUrls={imageUrls}
-          />
-          <MemoizedOurExpertise
-            text={`Our Dynamic Suite of Services Engineered for Innovation`}
-          />
-          <div className="w-11/12 mx-auto flex flex-col justify-center my-2">
-            <div className="mt-14 grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
-              {expertiseData.map((data) => {
-                return (
-                  <React.Fragment key={data.id}>
-                    <MemoizedExpertiseCard
-                      title={data.title}
-                      description={data.description}
-                      imageUrl={data.imageUrl}
-                    />
-                  </React.Fragment>
-                );
-              })}
-            </div>
+    <MemoizedCustomLayOut>
+      <div className="md:mx-32 !important px-2 pt-44 md:pt-52">
+        <MemoizedWelcomeSection
+          title={
+            <p>
+              Welcome to Orange League <br /> Your Digital Transformation
+              Partner
+            </p>
+          }
+          paragraph={` We're here to help you thrive in the digital landscape. With our expertise and dedication, we'll collaborate closely with you to develop tailored solutions that drive results.`}
+          imageUrls={imageUrls}
+        />
+        <MemoizedOurExpertise
+          text={`Our Dynamic Suite of Services Engineered for Innovation`}
+        />
+        <div className="w-11/12 mx-auto flex flex-col justify-center my-2">
+          <div className="mt-14 grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
+            {expertiseData.map((data) => {
+              return (
+                <React.Fragment key={data.id}>
+                  <MemoizedExpertiseCard
+                    title={data.title}
+                    description={data.description}
+                    imageUrl={data.imageUrl}
+                  />
+                </React.Fragment>
+              );
+            })}
           </div>
-          <MemoizedIndustriesWeServe />
-          <MemoizedOurTeam />
         </div>
-        <MemoizedOurVision />
+        <MemoizedIndustriesWeServe />
+        <MemoizedOurTeam />
       </div>
-    </>
+      <MemoizedOurVision />
+    </MemoizedCustomLayOut>
   );
 }

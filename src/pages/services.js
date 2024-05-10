@@ -1,5 +1,6 @@
 import { MemoizedServicesCard } from "@/SDK/cards/ServicesCard";
 import imageUrls from "@/constants/imageUrls";
+import { MemoizedCustomLayOut } from "@/modules/GenericComponents/CustomLayOut";
 import { MemoizedOurExpertise } from "@/modules/Home/OurExpertise";
 import { MemoizedWelcomeSection } from "@/modules/Home/WelcomSection";
 import { MemoizedFooter } from "@/modules/Layout/Footer";
@@ -77,12 +78,14 @@ const serviceCard = [
 ];
 export default function Services() {
   return (
-    <div className="md:mx-32 !important">
-      <MemoizedHeader />
-      <div className="text-[#0A0A0A]">
+    <MemoizedCustomLayOut>
+      <div className="md:mx-32 !important px-2 pt-44 md:pt-96">
         <MemoizedWelcomeSection
           title={
-            " Tailored Solutions, Exceptional Results: Elevate Your Business with Orange League"
+            <p>
+              Tailored Solutions, Exceptional Results: Elevate Your Business
+              with Orange League
+            </p>
           }
           paragraph={` From responsive web design to mobile app development and beyond, we offer tailored services that elevate your brand and engage your audience. Join us on the journey to digital transformation and stay ahead of the competition.`}
         />
@@ -98,7 +101,6 @@ export default function Services() {
           );
         })}
       </div>
-    
-    </div>
+    </MemoizedCustomLayOut>
   );
 }

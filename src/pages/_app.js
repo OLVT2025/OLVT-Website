@@ -9,6 +9,8 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <CssBaseline />
+
+      <MemoizedHeader />
       <Component {...pageProps} />
       <MemoizedFooter />
     </>
