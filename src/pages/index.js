@@ -54,11 +54,11 @@ const expertiseData = [
 export default function Home() {
   return (
     <>
-      <div className="md:mx-40 !important">
+      <div className="md:mx-32 !important">
         <MemoizedHeader />
       </div>
       <div className="text-[#0A0A0A]">
-        <div className="md:mx-40 !important">
+        <div className="md:mx-32 !important">
           <MemoizedWelcomeSection
             title={
               " Welcome to Orange League Your Digital Transformation Partner"

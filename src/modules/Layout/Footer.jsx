@@ -6,7 +6,7 @@ import { MemoizedContactFrom } from "./ContactFrom";
 const Footer = () => {
   return (
     <>
-      <div className="md:mx-20 !important">
+      <div className="md:mx-32 !important">
         <MemoizedContactFrom />
       </div>
 
