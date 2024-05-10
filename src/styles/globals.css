@@ -4,7 +4,7 @@
 
 /* -----Almarai--------- */
 
- @font-face {
+@font-face {
   font-family: "Almarai";
   src: url("../../public/fonts/Almarai-Light.ttf");
   font-weight: 300;
@@ -55,13 +55,12 @@
   }
 }
 
-
 body {
-  color: rgb(var(--foreground-rgb));
+  /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
 }

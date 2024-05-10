@@ -5,7 +5,7 @@ import { MemoizedHeader } from "@/modules/Layout/Header";
 
 export default function Technologies() {
   return (
-    <>
+    <div className="md:mx-40 !important">
       <MemoizedHeader />
       <div className="text-[#0A0A0A]">
         <MemoizedWelcomeSection
@@ -24,7 +24,6 @@ export default function Technologies() {
           );
         })} */}
       </div>
-      <MemoizedFooter />
-    </>
+    </div>
   );
 }

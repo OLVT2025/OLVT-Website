@@ -77,9 +77,8 @@ const serviceCard = [
 ];
 export default function Services() {
   return (
-    <>
+    <div className="md:mx-40 !important">
       <MemoizedHeader />
-
       <div className="text-[#0A0A0A]">
         <MemoizedWelcomeSection
           title={
@@ -99,7 +98,7 @@ export default function Services() {
           );
         })}
       </div>
-      <MemoizedFooter />
-    </>
+    
+    </div>
   );
 }

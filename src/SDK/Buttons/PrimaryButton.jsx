@@ -1,8 +1,15 @@
 import React from "react";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import { CircularProgress } from "@mui/material";
 // import "./PrimaryButton.css";
 
-const PrimaryButton = ({ onClick, buttonText, buttonIcon, style }) => {
+const PrimaryButton = ({
+  onClick,
+  buttonText,
+  buttonIcon,
+  style,
+  loading = false,
+}) => {
   return (
     <button
       onClick={onClick}
@@ -10,14 +17,18 @@ const PrimaryButton = ({ onClick, buttonText, buttonIcon, style }) => {
         buttonText == "Submit" ? "w-full" : ""
       }`}
     >
-      <div className="flex justify-center gap-x-2 items-center mx-6 my-3 ">
-        <p className="text-[1rem]">{buttonText || `Connect Us`}</p>
-        {buttonIcon || (
-          <ArrowForwardIcon
-            style={{ color: "white", width: "1.2rem", height: "1.2rem" }}
-          />
-        )}
-      </div>
+      {loading ? (
+        <CircularProgress color="success" sx={{ padding: "4px" }} />
+      ) : (
+        <div className="flex justify-center gap-x-2 items-center mx-6 my-3 ">
+          <p className="text-[1rem]">{buttonText || `Connect Us`}</p>
+          {buttonIcon || (
+            <ArrowForwardIcon
+              style={{ color: "white", width: "1.2rem", height: "1.2rem" }}
+            />
+          )}
+        </div>
+      )}
     </button>
   );
 };

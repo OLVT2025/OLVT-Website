@@ -11,18 +11,18 @@ import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-
 import { useRouter } from "next/router";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import { scrollToFooter } from "@/utils/scrollToFooter";
 
 const drawerWidth = 240;
 const navItems = [
   { name: "Home", path: "/" },
   { name: "Services", path: "/services" },
-  { name: "Technologies", path: "/technologies" },
-  { name: "Industries", path: "/industries" },
-  { name: "Case Studies", path: "/case-studies" },
-  { name: "About us", path: "/about-us" },
+  // { name: "Technologies", path: "/technologies" },
+  // { name: "Industries", path: "/industries" },
+  // { name: "Case Studies", path: "/case-studies" },
+  // { name: "About us", path: "/about-us" },
 ];
 
 function Header(props) {
@@ -135,7 +135,7 @@ function Header(props) {
               display: { xs: "none", sm: "none", md: "block" },
             }}
           >
-            <PrimaryButton />
+            <PrimaryButton onClick={scrollToFooter} />
           </Box>
 
           <IconButton

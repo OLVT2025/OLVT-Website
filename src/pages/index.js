@@ -7,7 +7,8 @@ import { MemoizedOurVision } from "@/modules/Home/OurVision";
 import { MemoizedWelcomeSection } from "@/modules/Home/WelcomSection";
 import { MemoizedFooter } from "@/modules/Layout/Footer";
 import { MemoizedHeader } from "@/modules/Layout/Header";
-import React from "react";
+import React, { useRef } from "react";
+import { animateScroll } from "react-scroll";
 
 const expertiseData = [
   {
@@ -53,38 +54,41 @@ const expertiseData = [
 export default function Home() {
   return (
     <>
-      <MemoizedHeader />
+      <div className="md:mx-40 !important">
+        <MemoizedHeader />
+      </div>
       <div className="text-[#0A0A0A]">
-        <MemoizedWelcomeSection
-          title={
-            " Welcome to Orange League Your Digital Transformation Partner"
-          }
-          paragraph={` We're here to help you thrive in the digital landscape. With our expertise and dedication, we'll collaborate closely with you to develop tailored solutions that drive results.`}
-          imageUrls={imageUrls}
-        />
-        <MemoizedOurExpertise
-          text={`Our Dynamic Suite of Services Engineered for Innovation`}
-        />
-        <div className="w-11/12 mx-auto flex flex-col justify-center my-2">
-          <div className="mt-14 grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
-            {expertiseData.map((data) => {
-              return (
-                <React.Fragment key={data.id}>
-                  <MemoizedExpertiseCard
-                    title={data.title}
-                    description={data.description}
-                    imageUrl={data.imageUrl}
-                  />
-                </React.Fragment>
-              );
-            })}
+        <div className="md:mx-40 !important">
+          <MemoizedWelcomeSection
+            title={
+              " Welcome to Orange League Your Digital Transformation Partner"
+            }
+            paragraph={` We're here to help you thrive in the digital landscape. With our expertise and dedication, we'll collaborate closely with you to develop tailored solutions that drive results.`}
+            imageUrls={imageUrls}
+          />
+          <MemoizedOurExpertise
+            text={`Our Dynamic Suite of Services Engineered for Innovation`}
+          />
+          <div className="w-11/12 mx-auto flex flex-col justify-center my-2">
+            <div className="mt-14 grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
+              {expertiseData.map((data) => {
+                return (
+                  <React.Fragment key={data.id}>
+                    <MemoizedExpertiseCard
+                      title={data.title}
+                      description={data.description}
+                      imageUrl={data.imageUrl}
+                    />
+                  </React.Fragment>
+                );
+              })}
+            </div>
           </div>
+          <MemoizedIndustriesWeServe />
+          <MemoizedOurTeam />
         </div>
-        <MemoizedIndustriesWeServe />
-        <MemoizedOurTeam />
         <MemoizedOurVision />
       </div>
-      <MemoizedFooter />
     </>
   );
 }

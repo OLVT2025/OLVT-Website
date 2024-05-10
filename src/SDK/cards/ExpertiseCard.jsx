@@ -1,7 +1,9 @@
 import React from "react";
 import { MemoizedSecondaryButton } from "@/SDK/Buttons/SecondaryButton";
+import { useRouter } from "next/router";
 
 const ExpertiseCard = ({ title, description, imageUrl }) => {
+  const navigate = useRouter();
   return (
     <div className="px-5 border border-accent-white  shadow-lg rounded-2xl py-9 ">
       <div className="flex mb-2 justify-between">
@@ -13,7 +15,12 @@ const ExpertiseCard = ({ title, description, imageUrl }) => {
         {description}
       </p>
 
-      <MemoizedSecondaryButton buttonText="Learn More" />
+      <MemoizedSecondaryButton
+        buttonText="Learn More"
+        onClick={() => {
+          navigate.push("/services");
+        }}
+      />
     </div>
   );
 };

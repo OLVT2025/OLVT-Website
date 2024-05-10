@@ -6,7 +6,9 @@ import { MemoizedContactFrom } from "./ContactFrom";
 const Footer = () => {
   return (
     <>
-      <MemoizedContactFrom />
+      <div className="md:mx-20 !important">
+        <MemoizedContactFrom />
+      </div>
 
       <footer className="bg-accent-black py-6 text-accent-white">
         <div className=" bg-accent-black pt-2 w-full">
@@ -53,7 +55,7 @@ const Footer = () => {
                 <p>Terms of Conditions</p>
               </div>
 
-              <p>Reflect App, LLC. All rights reserved.</p>
+              <p>Orange LVT Enterprises. All rights reserved.</p>
             </div>
           </div>
         </div>

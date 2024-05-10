@@ -1,6 +1,7 @@
 import React from "react";
 import { MemoizedPrimaryButton } from "@/SDK/Buttons/PrimaryButton";
 import { MemoizedCustomTitle } from "../GenericComponents/CustomTitle";
+import { scrollToFooter } from "@/utils/scrollToFooter";
 
 const IndustriesWeServe = () => {
   return (
@@ -23,7 +24,7 @@ const IndustriesWeServe = () => {
             you are in finance, retail, or manufacturing, we have you covered.
           </p>
 
-          <MemoizedPrimaryButton />
+          <MemoizedPrimaryButton onClick={scrollToFooter} />
         </div>
       </div>
     </div>
