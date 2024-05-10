@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* -----Almarai--------- */
+
+ @font-face {
+  font-family: "Almarai";
+  src: url("../../public/fonts/Almarai-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Almarai";
+  src: url("../../public/fonts/Almarai-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Almarai";
+  src: url("../../public/fonts/Almarai-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Almarai";
+  src: url("../../public/fonts/Almarai-ExtraBold.ttf");
+  font-weight: 800;
+}
+
+/* PrimaryButton.css */
+.primary-button-animation {
+  transition: all 0.6s ease;
+}
+
+.primary-button-animation:hover {
+  animation-name: example;
+  animation-duration: 3s;
+  animation-iteration-count: 3;
+}
+
+@keyframes example {
+  0% {
+    background-image: linear-gradient(90deg, #ffd60c, #f15d27, #f15d27);
+    transition-duration: 300s;
+  }
+  25% {
+    background-image: linear-gradient(90deg, #f15d27, #ffd60c, #ffd60c);
+  }
+  50% {
+    background-image: linear-gradient(90deg, #ffd60c, #f15d27, #f15d27);
+  }
+  100% {
+    background-image: linear-gradient(90deg, #f15d27, #ffd60c, #ffd60c);
+  }
+}
+
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
