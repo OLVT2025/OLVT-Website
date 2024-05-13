@@ -90,7 +90,11 @@ export default function Services() {
           paragraph={` From responsive web design to mobile app development and beyond, we offer tailored services that elevate your brand and engage your audience. Join us on the journey to digital transformation and stay ahead of the competition.`}
         />
         <MemoizedOurExpertise
-          text={`Proven Expertise in Digital Innovation and Development`}
+          text={
+            <p>
+              Proven Expertise in <br /> Digital Innovation and Development
+            </p>
+          }
         />
 
         {serviceCard.map((card, index) => {

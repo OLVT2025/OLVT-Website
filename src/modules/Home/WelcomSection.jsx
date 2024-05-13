@@ -11,7 +11,7 @@ const WelcomeSection = ({ title, paragraph, imageUrls }) => {
         </div>
       </div>
 
-      <p className="my-7 mx-auto text-center font-normal text-xs sm:text-base max-w-sm md:max-w-lg lg:max-w-2xl">
+      <p className="my-7 mx-auto text-center font-normal text-xs sm:text-base max-w-sm md:max-w-lg lg:max-w-4xl">
         {paragraph}
       </p>
     

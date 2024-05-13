@@ -9,13 +9,13 @@ const PrimaryButton = ({
   style,
   loading = false,
 }) => {
-  
   return (
     <button
       onClick={onClick}
       className={`m-1 bg-primary-orange font-almarai font-normal md:font-bold text-sm md:text-base text-white rounded-lg hover-animation ${
         buttonText === "Submit" ? "w-full" : ""
       }`}
+      style={style}
     >
       {loading ? (
         <CircularProgress color="success" sx={{ padding: "4px" }} />

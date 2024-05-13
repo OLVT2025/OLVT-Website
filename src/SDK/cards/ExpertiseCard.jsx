@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 const ExpertiseCard = ({ title, description, imageUrl }) => {
   const navigate = useRouter();
   return (
-    <div className="px-5 border border-accent-white  shadow-lg rounded-2xl py-9 ">
+    <div className="px-5 border bg-accent-white border-accent-white  shadow-lg rounded-2xl py-9 ">
       <div className="flex mb-2 justify-between">
         <p className="text-accent-black font-bold text-xl">{title}</p>
         <img src={imageUrl} alt={title} className="w-12 h-12" />

@@ -66,7 +66,11 @@ export default function Home() {
           imageUrls={imageUrls}
         />
         <MemoizedOurExpertise
-          text={`Our Dynamic Suite of Services Engineered for Innovation`}
+          text={
+            <p>
+              Our Dynamic Suite of Services <b /> Engineered for Innovation
+            </p>
+          }
         />
         <div className="w-11/12 mx-auto flex flex-col justify-center my-2">
           <div className="mt-14 grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
