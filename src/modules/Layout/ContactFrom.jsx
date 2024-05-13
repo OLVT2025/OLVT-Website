@@ -26,7 +26,7 @@ const ContactFrom = () => {
     };
   }, []);
   return (
-    <div className="lg:mx-auto mx-4 w-11/12 lg:w-9/12 lg:mt-2 lg:mb-6 my-8 order border-accent-white shadow-lg rounded-2xl py-2">
+    <div className="lg:mx-auto mx-4 w-11/12 lg:w-11/12 lg:mt-2 lg:mb-6 my-8 order border-accent-white shadow-lg rounded-2xl py-2">
       <div className="">
         <div className="flex justify-between p-10">
           <div className="w-full lg:w-1/2 ">

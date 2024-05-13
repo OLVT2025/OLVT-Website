@@ -99,9 +99,9 @@ export default function Services() {
 
         {serviceCard.map((card, index) => {
           return (
-            <React.Fragment key={card.id}>
+            <div className="md:my-12 my-10" key={card.id}>
               <MemoizedServicesCard card={card} index={index} />
-            </React.Fragment>
+            </div>
           );
         })}
       </div>

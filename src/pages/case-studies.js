@@ -1,7 +1,35 @@
+import { MemoizedCaseStudyCards } from "@/SDK/cards/CaseStudyCards";
 import { MemoizedCustomLayOut } from "@/modules/GenericComponents/CustomLayOut";
 import { MemoizedOurExpertise } from "@/modules/Home/OurExpertise";
 import { MemoizedWelcomeSection } from "@/modules/Home/WelcomSection";
 import React from "react";
+
+const caseStudyData = [
+  {
+    id: 1,
+    title: "NSE- Corpositry Dashboard",
+    desc: `We specialize in harnessing the power of React JS to build dynamic and interactive web applications. Our team of experienced developers is well-versed in React's capabilities and best practices, enabling us to deliver exceptional digital experiences tailored to your business needs.`,
+    imgUrl: "/images/caseStudy/NseDashboard.svg",
+  },
+  {
+    id: 2,
+    title: "NSE Learn App",
+    desc: `We specialize in harnessing the power of React JS to build dynamic and interactive web applications. Our team of experienced developers is well-versed in React's capabilities and best practices, enabling us to deliver exceptional digital experiences tailored to your business needs.`,
+    imgUrl: "/images/caseStudy/NseLearning.svg",
+  },
+  {
+    id: 3,
+    title: "NSE Learn App",
+    desc: `We specialize in harnessing the power of React JS to build dynamic and interactive web applications. Our team of experienced developers is well-versed in React's capabilities and best practices, enabling us to deliver exceptional digital experiences tailored to your business needs.`,
+    imgUrl: "/images/caseStudy/NseLearning.svg",
+  },
+  {
+    id: 4,
+    title: "NSE Learn App",
+    desc: `We specialize in harnessing the power of React JS to build dynamic and interactive web applications. Our team of experienced developers is well-versed in React's capabilities and best practices, enabling us to deliver exceptional digital experiences tailored to your business needs.`,
+    imgUrl: "/images/caseStudy/NseDashboard.svg",
+  },
+];
 
 const CaseStudies = () => {
   return (
@@ -19,11 +47,21 @@ const CaseStudies = () => {
           title="Real-world Success Stories"
           text={
             <p>
-              Witness the Transformative Journey of <br/> Our Clients'
-              Success
+              Witness the Transformative Journey of <br /> Our Clients' Success
             </p>
           }
         />
+        <div className="mx-auto md:mx-0 lg:mx-10 flex flex-col justify-center my-2">
+          <div className="mt-14 grid  grid-cols-1 md:grid-cols-2 gap-6">
+            {caseStudyData.map((data) => {
+              return (
+                <React.Fragment key={data.id}>
+                  <MemoizedCaseStudyCards data={data} />
+                </React.Fragment>
+              );
+            })}
+          </div>
+        </div>
       </div>
     </MemoizedCustomLayOut>
   );

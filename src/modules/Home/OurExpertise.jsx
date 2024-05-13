@@ -9,7 +9,7 @@ const OurExpertise = ({ title = "Our Expertise", text, style }) => {
     >
       <MemoizedCustomTitle title={title} />
       {text ? (
-        <div className="md:max-w-4xl  mt-4 mx-auto text-center text-xl md:text-3xl lg:text-5xl font-bold style">
+        <div className="md:max-w-4xl mt-4 mx-auto text-center text-md md:text-xl sm:text-3xl lg:text-5xl font-bold style">
           {text}
         </div>
       ) : null}

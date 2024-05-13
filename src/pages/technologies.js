@@ -87,7 +87,7 @@ export default function Technologies() {
           style={{ marginTop: "10rem" }}
         />
         <div className="mx-auto sm:mx-12 flex flex-col justify-center my-2">
-          <div className="mt-14 grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
+          <div className="mt-14 grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
             {techData.map((data) => {
               return (
                 <React.Fragment key={data.id}>
