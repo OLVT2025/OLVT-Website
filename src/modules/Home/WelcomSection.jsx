@@ -14,41 +14,25 @@ const hue = keyframes`
 `;
 
 const AnimatedGradientText = styled.h1`
-  ${"" /* background-image: linear-gradient(90deg, #fed175, #fd8ea6); */}
-  ${"" /* color: #f35626; */}
   background-image: -webkit-linear-gradient(180deg, #fed175, #fd8ea6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-animation: ${hue} 5s infinite linear;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
-    ${
-      "" /* sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
-    }
   font-feature-settings: "kern";
-  ${"" /* font-size: 48px; */}
-  ${"" /* font-weight: 700; */}
-  ${"" /* line-height: 48px; */}
-  ${"" /* overflow-wrap: break-word; */}
-  ${"" /* text-align: center; */}
   text-rendering: optimizelegibility;
   -moz-osx-font-smoothing: grayscale;
-
   &.gradient-1 {
     background-image: linear-gradient(90deg, #fed175, #fd8ea6);
   }
-
   &.gradient-2 {
     background-image: linear-gradient(90deg, #fd8ea6, #b28efd);
   }
-
   &.gradient-3 {
     background-image: linear-gradient(90deg, #b28efd, #62ff48);
   }
-
   &.gradient-4 {
     background-image: linear-gradient(90deg, #62ff48, #fec082);
   }
-
   &.gradient-5 {
     background-image: linear-gradient(90deg, #b28efd, #fec082);
   }
@@ -56,10 +40,12 @@ const AnimatedGradientText = styled.h1`
 
 const WelcomeSection = ({ title, paragraph, imageUrls }) => {
   return (
-    <div className=" text-center mx-auto">
-      <div className=" mb-7  mx-auto text-center text-xl md:text-3xl lg:text-5xl font-bold md:max-w-5xl">
-        <AnimatedGradientText> {title}</AnimatedGradientText>
-      </div>
+    <div className="text-center mx-auto">
+      <AnimatedGradientText>
+        <div className="mb-7  mx-auto text-center text-xl md:text-3xl lg:text-5xl font-bold md:max-w-5xl">
+          {title}
+        </div>
+      </AnimatedGradientText>
 
       <p className="my-7 mx-auto text-center font-normal text-xs sm:text-base max-w-sm md:max-w-lg lg:max-w-4xl">
         {paragraph}

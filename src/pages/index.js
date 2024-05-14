@@ -6,8 +6,7 @@ import { MemoizedOurExpertise } from "@/modules/Home/OurExpertise";
 import { MemoizedOurTeam } from "@/modules/Home/OurTeam";
 import { MemoizedOurVision } from "@/modules/Home/OurVision";
 import { MemoizedWelcomeSection } from "@/modules/Home/WelcomSection";
-import { MemoizedFooter } from "@/modules/Layout/Footer";
-import { MemoizedHeader } from "@/modules/Layout/Header";
+
 import React from "react";
 
 const expertiseData = [

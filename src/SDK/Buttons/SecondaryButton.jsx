@@ -1,38 +1,29 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useState } from "react";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+// import "./PrimaryButton.css";
 
-const SecondaryButton = ({ onClick }) => {
+const SecondaryButton = ({ onClick, buttonText, buttonIcon }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
-    <motion.button
+    <button
+      onClick={onClick}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
       className={`m-1 bg-primary-orange font-almarai font-normal px-4 py-2 text-white rounded-lg`}
-      whileHover={{ width: "10rem" }} // Expands to full width when hovered
-      style={{ overflow: "hidden" }} // Hides overflow
     >
-      <motion.div
-        className="button-content"
-        initial={{ width: 0 }} // Initially hidden
-        animate={{ width: "100%" }} // Smoothly expand to full width when hovered
-        transition={{ duration: 0.3 }} // Smooth transition duration
-        style={{ display: "flex", alignItems: "center" }}
-      >
-        <motion.span
-          initial={{ opacity: 0 }} // Initially hidden
-          animate={{ opacity: 1 }} // Smoothly show when hovered
-          transition={{ duration: 0.3, delay: 0.2 }} // Smooth transition duration with a slight delay
-          style={{ marginRight: "0.5rem" }}
-        >
-          Learn More
-        </motion.span>
+      {/* "Learn More" text with transition */}
+      <span className={`${isHovered ? "mr-2" : ""}`}>
+        {isHovered ? `Learn More` : ``}
+      </span>
+
+      {/* Arrow icon */}
+      <span>
         <ArrowForwardIcon
-          style={{
-            color: "white",
-            width: "1.2rem",
-            height: "1.2rem",
-          }}
+          style={{ color: "white", width: "1.2rem", height: "1.2rem" }}
         />
-      </motion.div>
-    </motion.button>
+      </span>
+    </button>
   );
 };
 

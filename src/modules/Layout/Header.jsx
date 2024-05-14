@@ -14,6 +14,7 @@ import Typography from "@mui/material/Typography";
 import { useRouter } from "next/router";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { scrollToFooter } from "@/utils/scrollToFooter";
+import { AnimatedGradientButton } from "@/SDK/Buttons/buttonStyle";
 
 const drawerWidth = 240;
 const navItems = [
@@ -180,7 +181,7 @@ export const MemoizedHeader = React.memo(Header);
 
 const PrimaryButton = ({ onClick, buttonText, buttonIcon, style }) => {
   return (
-    <button
+    <AnimatedGradientButton
       onClick={onClick}
       className={`m-1 bg-primary-orange font-almarai font-bold text-white rounded-lg primary-button-animation ${
         buttonText === "Submit" ? "w-full" : ""
@@ -205,6 +206,6 @@ const PrimaryButton = ({ onClick, buttonText, buttonIcon, style }) => {
           style={{ color: "white", width: "1.2rem", height: "1.2rem" }}
         />
       </div>
-    </button>
+    </AnimatedGradientButton>
   );
 };
