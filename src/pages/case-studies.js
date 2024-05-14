@@ -56,7 +56,7 @@ const CaseStudies = () => {
             {caseStudyData.map((data) => {
               return (
                 <React.Fragment key={data.id}>
-                  <MemoizedCaseStudyCards data={data} />
+                  <MemoizedCaseStudyCards data={data} isButton={true} />
                 </React.Fragment>
               );
             })}

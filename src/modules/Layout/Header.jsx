@@ -22,7 +22,7 @@ const navItems = [
   { name: "Technologies", path: "/technologies" },
   // { name: "Industries", path: "/industries" },
   { name: "Case Studies", path: "/case-studies" },
-  // { name: "About us", path: "/about-us" },
+  { name: "About us", path: "/about-us" },
 ];
 
 function Header(props) {
