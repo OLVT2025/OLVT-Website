@@ -216,8 +216,8 @@ const AboutUs = () => {
         />
         <div>
           <p className="text-center max-w-7xl mx-2 sm:mx-auto text-base font-normal">
-            At the heart of {""}
-            <span className="text-primary-orange">Orange League</span> is a
+            At the heart of
+            <span className="text-primary-orange"> Orange League</span> is a
             vibrant and inclusive culture that fosters creativity,
             collaboration, and continuous learning. We believe in empowering our
             team members to take ownership of their work, embrace challenges,
@@ -226,7 +226,7 @@ const AboutUs = () => {
           </p>
         </div>
         <div className="mx-auto md:mx-0 lg:mx-20 flex flex-col justify-center my-2">
-          <div className="mt-14 grid  grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="mt-14 grid  grid-cols-1 md:grid-cols-2 gap-10">
             {aboutUsData.map((data) => {
               return (
                 <React.Fragment key={data.id}>

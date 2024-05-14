@@ -28,36 +28,22 @@
   font-weight: 800;
 }
 
-/* PrimaryButton.css */
-.primary-button-animation {
-  transition: all 0.6s ease;
-}
-
-.primary-button-animation:hover {
-  animation-name: example;
-  animation-duration: 3s;
-  animation-iteration-count: 3;
-}
-
-@keyframes example {
-  0% {
-    background-image: linear-gradient(90deg, #ffd60c, #f15d27, #f15d27);
-    transition-duration: 300s;
-  }
-  25% {
-    background-image: linear-gradient(90deg, #f15d27, #ffd60c, #ffd60c);
-  }
-  50% {
-    background-image: linear-gradient(90deg, #ffd60c, #f15d27, #f15d27);
-  }
-  100% {
-    background-image: linear-gradient(90deg, #f15d27, #ffd60c, #ffd60c);
-  }
-}
-
 body {
   box-sizing: 0;
   margin: 0;
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-wave {
+  animation: moveGradient 3s infinite linear;
 }
 
 .tech-card {
@@ -113,4 +99,24 @@ body {
   transform: translateY(0);
   opacity: 1;
   visibility: visible;
+}
+
+.primary-button-animation {
+  overflow: hidden;
+  transition: width 0.3s ease-in-out;
+  width: 2.4rem; /* Adjust according to your icon size */
+}
+
+.primary-button-animation.hovered {
+  width: auto;
+}
+
+.primary-button-animation span {
+  white-space: nowrap;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.primary-button-animation.hovered span {
+  opacity: 1;
 }
