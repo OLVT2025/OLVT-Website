@@ -28,7 +28,7 @@ const TechnologiesCard = ({ data }) => {
               onClick={() => {
                 navigate("/services");
               }}
-              isFullWidth={true}
+             
               style={{
                 fontWeight: "400",
                 fontSize: "16px",

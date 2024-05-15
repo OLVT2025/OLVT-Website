@@ -1,27 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { AnimatedGradientButton } from "./buttonStyle";
-// import "./PrimaryButton.css";
 
-const SecondaryButton = ({ onClick, buttonText, buttonIcon }) => {
-  const [isHovered, setIsHovered] = useState(false);
-
+const SecondaryButton = ({ onClick }) => {
   return (
     <AnimatedGradientButton
       onClick={onClick}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-      className={`m-1 bg-primary-orange font-almarai font-normal px-4 py-2 text-white rounded-lg`}
+      className={`m-1 bg-primary-orange  font-normal px-4 py-2 text-white rounded-lg secondary`}
     >
-      {/* "Learn More" text with transition */}
-      <span className={`${isHovered ? "mr-2" : ""}`}>
-        {isHovered ? `Learn More` : ``}
-      </span>
-
-      {/* Arrow icon */}
-      <span>
+      <span className="font-normal learn">Learn More</span>
+      <span className="arrow-icon">
         <ArrowForwardIcon
-          style={{ color: "white", width: "1.2rem", height: "1.2rem" }}
+          style={{  color: "white", width: "1.2rem", height: "1.2rem", opacity: 1 }}
         />
       </span>
     </AnimatedGradientButton>

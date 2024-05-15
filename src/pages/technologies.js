@@ -2,8 +2,6 @@ import { MemoizedTechnologiesCard } from "@/SDK/cards/TechnologiesCard";
 import { MemoizedCustomLayOut } from "@/modules/GenericComponents/CustomLayOut";
 import { MemoizedOurExpertise } from "@/modules/Home/OurExpertise";
 import { MemoizedWelcomeSection } from "@/modules/Home/WelcomSection";
-import { MemoizedFooter } from "@/modules/Layout/Footer";
-import { MemoizedHeader } from "@/modules/Layout/Header";
 import React from "react";
 
 const techData = [

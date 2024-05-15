@@ -1,10 +1,7 @@
 import { MemoizedServicesCard } from "@/SDK/cards/ServicesCard";
-import imageUrls from "@/constants/imageUrls";
 import { MemoizedCustomLayOut } from "@/modules/GenericComponents/CustomLayOut";
 import { MemoizedOurExpertise } from "@/modules/Home/OurExpertise";
 import { MemoizedWelcomeSection } from "@/modules/Home/WelcomSection";
-import { MemoizedFooter } from "@/modules/Layout/Footer";
-import { MemoizedHeader } from "@/modules/Layout/Header";
 import React from "react";
 
 const serviceCard = [
@@ -30,7 +27,7 @@ const serviceCard = [
     imageUrl: `/images/services/FrontendService.svg`,
   },
   {
-    id: 2,
+    id: 3,
     title: `Backend Development`,
     description: `We understand that the backbone of any robust digital solution lies in its backend architecture. Our backend development services are designed to create scalable, secure, and high-performing systems that drive the functionality and success of your digital products.`,
     tools: [
@@ -46,21 +43,21 @@ const serviceCard = [
     imageUrl: `/images/services/BackendService.svg`,
   },
   {
-    id: 3,
+    id: 4,
     title: `Mobile Development`,
     description: `We recognize the significance of mobile applications in today's digital landscape. Our mobile development team specialize in building native mobile applications for iOS and Android platforms, leveraging platform-specific technologies and frameworks to deliver optimal performance and user experience.`,
     tools: [`React Native`, `Ionic`, `Flutter`],
     imageUrl: `/images/services/MobileService.svg`,
   },
   {
-    id: 4,
+    id: 5,
     title: `QA Testing`,
     description: `Our dedicated team of QA engineers follows a meticulous testing process to uncover potential defects and vulnerabilities in your digital products. Our comprehensive QA testing services are designed to identify and resolve issues, ensuring that your products meet the highest standards of quality, reliability, and performance. `,
     tools: [`Selenium`, `Postman`, `Jira`, `Swagger`],
     imageUrl: `/images/services/QAService.svg`,
   },
   {
-    id: 5,
+    id: 6,
     title: `Cloud Services`,
     description: `Our experienced deployment team follows a systematic approach to deploy your digital solutions, carefully planning and coordinating every step to minimize disruption to your operations. We prioritize efficiency, reliability, and security to ensure a successful deployment that meets your timeline and objectives.`,
 
