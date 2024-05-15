@@ -5,7 +5,7 @@ import imageUrls from "@/constants/imageUrls";
 
 const OurTeam = () => {
   return (
-    <div className="mt-36  w-11/12 mx-auto">
+    <div className="mt-36 lg:max-w-7xl mx-auto">
       <MemoizedCustomTitle title={"Our Team"} />
 
       <div className="px-2 mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">

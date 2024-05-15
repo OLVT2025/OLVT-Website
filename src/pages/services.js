@@ -79,7 +79,7 @@ const serviceCard = [
 export default function Services() {
   return (
     <MemoizedCustomLayOut>
-      <div className="md:mx-32 !important px-2 pt-44 md:pt-96">
+      <div className="mx-10 max-w-6xl lg:mx-auto !important px-2 pt-44 md:pt-96">
         <MemoizedWelcomeSection
           title={
             <p>

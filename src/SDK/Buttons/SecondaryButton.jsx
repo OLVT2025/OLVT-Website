@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import { AnimatedGradientButton } from "./buttonStyle";
 // import "./PrimaryButton.css";
 
 const SecondaryButton = ({ onClick, buttonText, buttonIcon }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <button
+    <AnimatedGradientButton
       onClick={onClick}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -23,7 +24,7 @@ const SecondaryButton = ({ onClick, buttonText, buttonIcon }) => {
           style={{ color: "white", width: "1.2rem", height: "1.2rem" }}
         />
       </span>
-    </button>
+    </AnimatedGradientButton>
   );
 };
 

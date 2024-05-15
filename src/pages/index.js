@@ -53,7 +53,7 @@ const expertiseData = [
 export default function Home() {
   return (
     <MemoizedCustomLayOut>
-      <div className="md:mx-32 !important px-2 pt-44 md:pt-52">
+      <div className="mx-10 max-w-6xl lg:mx-auto !important px-2 pt-44 md:pt-52 ">
         <MemoizedWelcomeSection
           title={
             <p>
@@ -71,7 +71,7 @@ export default function Home() {
             </p>
           }
         />
-        <div className="w-11/12 mx-auto flex flex-col justify-center my-2">
+        <div className="mx-auto w-auto lg:max-w-7xl flex  justify-center my-2">
           <div className="mt-14 grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
             {expertiseData.map((data) => {
               return (

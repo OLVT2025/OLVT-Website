@@ -5,13 +5,13 @@ import { MemoizedContactFrom } from "./ContactFrom";
 
 const Footer = () => {
   return (
-    <>
-      <div className="md:mx-32 !important">
+    <div >
+      <div className=" !important  max-w-7xl mx-auto">
         <MemoizedContactFrom />
       </div>
 
-      <footer className="bg-accent-black py-6 text-accent-white">
-        <div className=" bg-accent-black pt-2 w-full">
+      <footer className="bg-accent-black py-6 text-accent-white ">
+        <div className=" bg-accent-black pt-2 w-full  max-w-7xl mx-auto">
           <div className="relative w-11/12 mx-auto mt-12 text-accent-white">
             <div className="flex flex-col gap-8  sm:flex-row justify-between">
               <div className="flex w-full sm:w-1/2 flex-row justify-between sm:justify-start sm:flex-col">
@@ -60,7 +60,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-    </>
+    </div>
   );
 };
 

@@ -77,7 +77,7 @@ const whatWeDoData = [
 const AboutUs = () => {
   return (
     <MemoizedCustomLayOut>
-      <div className="md:mx-32 !important px-2 pt-44 md:pt-96">
+      <div className="mx-10 max-w-6xl lg:mx-auto !important px-2 pt-44 md:pt-96">
         <MemoizedWelcomeSection
           title={
             <p>
@@ -87,23 +87,14 @@ const AboutUs = () => {
           paragraph={` Uncover the stories behind our successful projects and learn how we've helped businesses like yours achieve their digital goals. Our case studies provide valuable insights and inspiration for your own digital initiatives.`}
         />
         <div className="my-72 sm:my-52">
-          <p className="flex md:max-w-3xl mt-4 mx-auto sm:mx-auto text-center text-lg lg:text-xl font-bold">
-            <span className="inline-block inline-block lg:block hidden">
-              <img src="/images/comma.svg" alt="sfd" className="w-20" />
-            </span>
-            <span className="block md:inline ">
-              Since the beginning our vision is to revolutionize the digital
-              landscape, inspiring growth and success for our clients. Together,
-              let's embark on a journey of innovation, collaboration, and which
-              will have lasting impact.
-            </span>
-            <span className="inline-block lg:block hidden">
-              <img
-                src="/images/comma.svg"
-                alt="sfd"
-                style={{ transform: "rotateY(180deg)" }}
-                className="w-20 mt-36 sm:mt-20 md:mt-14  "
-              />
+          <p className="md:max-w-3xl mt-4 mx-auto sm:mx-auto text-center text-lg lg:text-xl font-bold">
+            <span className="text-primary-orange font-bold  text-2xl">&ldquo; </span>
+            Since the beginning our vision is to revolutionize the digital
+            landscape, inspiring growth and success for our clients. Together,
+            let's embark on a journey of innovation, collaboration, and which
+            will have lasting impact.
+            <span className="text-primary-orange text-2xl ">
+              &rdquo;
             </span>
           </p>
 
@@ -153,7 +144,7 @@ const AboutUs = () => {
           </p>
         </div>
 
-        <div className="max-w-7xl mt-40  mx-2 md:mx-auto flex flex-col justify-center order border-accent-purple bg-accent-white shadow-lg rounded-2xl">
+        <div className="mt-40  mx-2 md:mx-auto flex flex-col justify-center order border-accent-purple bg-accent-white shadow-lg rounded-2xl">
           <div className="py-8 px-2 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 place-items-center">
             {whoweAreData.map((data) => {
               return (
@@ -177,7 +168,7 @@ const AboutUs = () => {
           }
         />
         <div>
-          <p className="text-center max-w-5xl mx-2 sm:mx-auto text-base font-normal">
+          <p className="text-center  mx-2 sm:mx-auto text-base font-normal">
             We specialize in providing end-to-end digital solutions, including
             web and mobile development, UI/UX design, digital marketing, and
             more. Our goal is to help businesses thrive in the digital age by
@@ -186,11 +177,14 @@ const AboutUs = () => {
           </p>
         </div>
 
-        <div className="mx-auto md:mx-0 lg:mx-20 flex flex-col justify-center my-2">
-          <div className="mt-14 grid  grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="mx-auto flex flex-col justify-center my-2">
+          <div className="mt-14 grid  grid-cols-1 md:grid-cols-3 gap-8">
             {whatWeDoData.map((data) => {
               return (
-                <div className="mx-auto md:w-full w-9/12 bg-accent-white border border-accent-white shadow-lg rounded-2xl relative overflow-hidden h-full">
+                <div
+                  key={data.id}
+                  className="mx-auto md:w-full w-9/12 bg-accent-white border border-accent-white shadow-lg rounded-2xl relative overflow-hidden h-full"
+                >
                   <div className="flex flex-col justify-center">
                     <img
                       src={data.imgUrl}
@@ -214,19 +208,19 @@ const AboutUs = () => {
             <p className="'text-2xl">Collaboration, Creativity, Excellence </p>
           }
         />
-        <div>
-          <p className="text-center max-w-7xl mx-2 sm:mx-auto text-base font-normal">
-            At the heart of
-            <span className="text-primary-orange"> Orange League</span> is a
-            vibrant and inclusive culture that fosters creativity,
-            collaboration, and continuous learning. We believe in empowering our
-            team members to take ownership of their work, embrace challenges,
-            and strive for excellence. Transparency, open communication, and
-            mutual respect are the cornerstones of our culture.
-          </p>
-        </div>
-        <div className="mx-auto md:mx-0 lg:mx-20 flex flex-col justify-center my-2">
-          <div className="mt-14 grid  grid-cols-1 md:grid-cols-2 gap-10">
+
+        <p className="text-center sm:mx-auto text-base font-normal">
+          At the heart of
+          <span className="text-primary-orange"> Orange League</span> is a
+          vibrant and inclusive culture that fosters creativity, collaboration,
+          and continuous learning. We believe in empowering our team members to
+          take ownership of their work, embrace challenges, and strive for
+          excellence. Transparency, open communication, and mutual respect are
+          the cornerstones of our culture.
+        </p>
+
+        <div className="mx-auto flex flex-col justify-center my-2">
+          <div className="mt-14 grid  grid-cols-1 md:grid-cols-2 gap-10 lg:gap-12">
             {aboutUsData.map((data) => {
               return (
                 <React.Fragment key={data.id}>

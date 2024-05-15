@@ -47,14 +47,14 @@ const WelcomeSection = ({ title, paragraph, imageUrls }) => {
         </div>
       </AnimatedGradientText>
 
-      <p className="my-7 mx-auto text-center font-normal text-xs sm:text-base max-w-sm md:max-w-lg lg:max-w-4xl">
+      <p className="my-7 mx-auto text-center font-normal text-base max-w-sm md:max-w-lg lg:max-w-4xl">
         {paragraph}
       </p>
 
       <MemoizedPrimaryButton onClick={scrollToFooter} />
       {imageUrls ? (
         <img
-          className="mx-auto sm:max-w-4/5 mt-8"
+          className="mx-auto mt-8"
           src={imageUrls.laptop}
           alt="laptop"
         />

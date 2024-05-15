@@ -20,9 +20,9 @@ const CaseStudyCards = ({ data, isButton = false }) => {
         </div>
       </div>
 
-      <div className={`md:mx-2  ${isButton==false ? 'py-4':'md:py-4'}` }>
+      <div className={`md:mx-2  ${isButton == false ? "py-4" : "md:py-4"}`}>
         {isButton && (
-          <div className="flex justify-center primary-button  mt-2 mb-4 md:mb-2 md:mb-auto place-items-center">
+          <div className="flex justify-center mt-2 mb-4 md:mb-2 md:mb-auto place-items-center">
             <MemoizedPrimaryButton
               buttonText="View Case Studies"
               onClick={() => {

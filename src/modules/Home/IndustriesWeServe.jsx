@@ -5,13 +5,13 @@ import { scrollToFooter } from "@/utils/scrollToFooter";
 
 const IndustriesWeServe = () => {
   return (
-    <div className="mx-auto w-11/12 mt-36 ">
+    <div className="mx-auto mt-36 ">
       <MemoizedCustomTitle title={"Industries We Serve"} />
 
-      <div className="flex flex-col sm:flex-row mt-10 sm:justify-between">
-        <div className="sm:w-1/2  h-96 shadow-xl rounded-3xl"></div>
+      <div className="flex flex-col md:flex-row mt-10 md:justify-between">
+        <div className="md:w-1/2  h-96 shadow-xl rounded-3xl"></div>
 
-        <div className="sm:w-1/2 my-12 pl-6">
+        <div className="md:w-1/2 my-12 pl-6">
           <h2 className="mb-6 text-2xl font-bold text-accent-black">
             Tailored Solutions, Addressing the Unique Needs of Every Industry
           </h2>

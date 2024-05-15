@@ -3,7 +3,7 @@ import { MemoizedPrimaryButton } from "../Buttons/PrimaryButton";
 
 const TechnologiesCard = ({ data }) => {
   return (
-    <div className="sm:w-auto w-11/12 bg-accent-white border border-accent-white shadow-lg rounded-2xl relative overflow-hidden tech-card h-full">
+    <div className="sm:w-auto w-full bg-accent-white border border-accent-white shadow-lg rounded-2xl relative overflow-hidden tech-card h-full">
       <div className="flex justify-center h-auto md:h-2/5">
         <img
           src={data.icon}
@@ -28,6 +28,7 @@ const TechnologiesCard = ({ data }) => {
               onClick={() => {
                 navigate("/services");
               }}
+              isFullWidth={true}
               style={{
                 fontWeight: "400",
                 fontSize: "16px",

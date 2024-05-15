@@ -14,13 +14,6 @@ const hue = keyframes`
 `;
 
 export const AnimatedGradientButton = styled.button`
-  position: relative;
-  overflow: hidden;
-  border: none;
-  background: #f15d27;
-  padding: 0;
-  cursor: pointer;
-
   font-weight: ${({ buttonText }) =>
     buttonText !== "Submit" ? "bold" : "normal"};
   font-size: ${({ buttonText }) =>
@@ -31,7 +24,7 @@ export const AnimatedGradientButton = styled.button`
   &:hover {
     background: linear-gradient(to right, #ffd60c, #f15d27, #ffd60c);
     background-size: 200% 100%;
-    animation: ${hue} 5s infinite;
+    animation: ${hue} 3s infinite;
     font-feature-settings: "kern";
   }
 `;

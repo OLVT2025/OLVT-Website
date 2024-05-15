@@ -10,7 +10,7 @@ const OurVision = () => {
         backgroundImage: `url(${imageUrls.vision})`,
       }}
     >
-      <div className="flex flex-col h-full justify-center items-center">
+      <div className="flex flex-col max-w-7xl mx-auto  h-full justify-center items-center">
         <div className="">
           <MemoizedCustomTitle title={`Our Vision`} />
         </div>

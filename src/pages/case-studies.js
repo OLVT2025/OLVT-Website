@@ -34,7 +34,7 @@ const caseStudyData = [
 const CaseStudies = () => {
   return (
     <MemoizedCustomLayOut>
-      <div className="md:mx-32 !important px-2 pt-44 md:pt-96">
+      <div className="md:mx-10 max-w-6xl lg:mx-auto !important px-2 pt-44 md:pt-96">
         <MemoizedWelcomeSection
           title={
             <p>
@@ -52,7 +52,7 @@ const CaseStudies = () => {
           }
         />
         <div className="mx-auto md:mx-0 lg:mx-10 flex flex-col justify-center my-2">
-          <div className="mt-14 grid  grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="mt-14 grid  grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12">
             {caseStudyData.map((data) => {
               return (
                 <React.Fragment key={data.id}>

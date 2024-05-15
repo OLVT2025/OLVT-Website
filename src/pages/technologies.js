@@ -75,7 +75,7 @@ const techData = [
 export default function Technologies() {
   return (
     <MemoizedCustomLayOut>
-      <div className="md:mx-32  !important px-2 pt-44 md:pt-80">
+      <div className="mx-10 max-w-6xl lg:mx-auto  !important px-2 pt-44 md:pt-80">
         <MemoizedWelcomeSection
           title={
             "Navigate the Digital Landscape with Leading Tech-driven Solutions"

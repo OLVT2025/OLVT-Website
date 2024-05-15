@@ -7,14 +7,16 @@ const PrimaryButton = ({
   onClick,
   buttonText,
   buttonIcon,
-  style,
+  isFullWidth = false,
   loading = false,
 }) => {
   return (
     <AnimatedGradientButton
       onClick={onClick}
       buttonText={buttonText}
-      style={style}
+      className={`m-1 bg-primary-orange font-almarai font-bold  text-white rounded-lg  ${
+        isFullWidth ? "w-full" : ""
+      }`}
     >
       {loading ? (
         <CircularProgress color="success" sx={{ padding: "4px" }} />

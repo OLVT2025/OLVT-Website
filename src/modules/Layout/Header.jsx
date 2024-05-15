@@ -79,15 +79,18 @@ function Header(props) {
           boxShadow: "none",
           bgcolor: "#fff",
           paddingTop: { xs: "1em", md: "2em" },
-          paddingLeft: { md: "8rem" },
-          paddingRight: { md: "8rem" },
+          paddingLeft: { lg: "8rem" },
+          paddingRight: { lg: "8rem" },
         }}
       >
         <Toolbar
           sx={{
+            width:'100%',
             display: "flex",
-            justifyContent: "space-between",
+            justifyContent: {lg:"space-around", xs:'space-between'},
             alignItems: "center",
+            
+
           }}
         >
           {/* Logo on the left */}
