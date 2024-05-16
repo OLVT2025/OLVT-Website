@@ -45,10 +45,10 @@ const CaseStudies = () => {
           name="keywords"
           content="case studies, success stories, digital transformation, technology company, software development, tech solutions, digital innovation"
         />
-        <meta name="url" content="https://www.orangeLVT.com/case-studies" />
+          <meta name="url" content="https://www.orangeleague.in/case-studies" />
         <meta name="lang" content="en" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://www.orangeLVT.com/case-studies" />
+        <link rel="canonical" href="https://www.orangeleague.in/case-studies" />
         <link rel="icon" href="/favicon.png" />
       </Head>
 

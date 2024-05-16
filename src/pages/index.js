@@ -56,7 +56,7 @@ export default function Home() {
     <>
       <Head>
         <title>
-          Welcome to Orange LVT - Your Digital Transformation Partner
+           Orange LVT - Your Digital Transformation Partner
         </title>
         <meta
           name="description"
