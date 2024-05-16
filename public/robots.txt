@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://www.orangeLVT.com/sitemap.xml
+Sitemap: https://www.orangeleague.in/sitemap.xml

@@ -87,10 +87,10 @@ export default function Services() {
           name="keywords"
           content="services, user experience design, frontend development, backend development, mobile development, QA testing, deployment, technology company, software development, tech solutions, digital transformation"
         />
-        <meta name="url" content="https://www.orangeLVT.com/services" />
+        <meta name="url" content="https://www.orangeleague.in/services" />
         <meta name="lang" content="en" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://www.orangeLVT.com/services" />
+        <link rel="canonical" href="https://www.orangeleague.in/services" />
         <link rel="icon" href="/favicon.png" />
       </Head>
 

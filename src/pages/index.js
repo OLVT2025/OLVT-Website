@@ -60,16 +60,16 @@ export default function Home() {
         </title>
         <meta
           name="description"
-          content="Orange LVT helps enterprises turn their ideas into successful products. Contact us today to learn more about how we can help you build a successful MVP. Leading technology company specializing in digital transformation solutions."
+          content=" Orange League Venture Technology helps enterprises turn their ideas into successful products. Contact us today to learn more about how we can help you build a successful MVP. Leading technology company specializing in digital transformation solutions."
         />
         <meta
           name="keywords"
-          content="Orange LVT, digital transformation, MVP development, technology company, software development, product development, digital innovation, tech solutions"
+          content=" Orange League Venture Technology, League Venture Technology,Orange LVT, LVT, digital transformation, MVP development, technology company, software development, product development, digital innovation, tech solutions"
         />
-        <meta name="url" content="https://www.orangeLVT.com/" />
+        <meta name="url" content="https://www.orangeleague.in/" />
         <meta name="lang" content="en" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://www.orangeLVT.com/" />
+        <link rel="canonical" href="https://www.orangeleague.in/" />
         <link rel="icon" href="/favicon.png" />
       </Head>
 

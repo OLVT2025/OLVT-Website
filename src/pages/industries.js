@@ -15,10 +15,10 @@ const industries = () => {
             name="keywords"
             content="industries, healthcare, finance, e-commerce, digital transformation, technology solutions, tech company, software development, digital innovation"
           />
-        <meta name="url" content="https://www.orangeLVT.com/industries" />
+        <meta name="url" content="https://www.orangeleague.in/industries" />
         <meta name="lang" content="en" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://www.orangeLVT.com/industries" />
+        <link rel="canonical" href="https://www.orangeleague.in/industries" />
         <link rel="icon" href="/favicon.png" />
       </Head>
     </>

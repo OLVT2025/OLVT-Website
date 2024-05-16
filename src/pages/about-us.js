@@ -79,19 +79,19 @@ const AboutUs = () => {
   return (
     <>
       <Head>
-        <title>About Orange LVT - Digital Innovation and Impact</title>
+        <title>About Us Orange LVT - Digital Innovation and Impact</title>
         <meta
           name="description"
           content="Learn about Orange LVT's vision, mission, and values. Discover how we help businesses thrive with innovative digital solutions and exceptional results. Leading technology company specializing in digital innovation and impact."
         />
         <meta
           name="keywords"
-          content="Orange LVT, digital innovation, about us, vision, mission, values, technology company, software development, digital transformation, tech solutions"
+          content="Orange League Venture Technology ,Orange LVT, digital innovation, about us, vision, mission, values, technology company, software development, digital transformation, tech solutions"
         />
-        <meta name="url" content="https://www.orangeLVT.com/about-us" />
+        <meta name="url" content="https://www.orangeleague.in/about-us" />
         <meta name="lang" content="en" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://www.orangeLVT.com/about-us" />
+        <link rel="canonical" href="https://www.orangeleague.in/about-us" />
         <link rel="icon" href="/favicon.png" />
       </Head>
 

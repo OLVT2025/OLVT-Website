@@ -84,10 +84,10 @@ export default function Technologies() {
           name="keywords"
           content="technologies, React JS, Express, MongoDB, Node.js, AWS, GCP, Docker, Postman, Next.js, technology company, software development, tech solutions, digital innovation"
         />
-        <meta name="url" content="https://www.orangeLVT.com/technologies" />
+        <meta name="url" content="https://www.orangeleague.in/technologies" />
         <meta name="lang" content="en" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://www.orangeLVT.com/technologies" />
+        <link rel="canonical" href="https://www.orangeleague.in/technologies" />
         <link rel="icon" href="/favicon.png" />
       </Head>
 
