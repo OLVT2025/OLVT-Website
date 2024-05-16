@@ -6,6 +6,7 @@ import { MemoizedOurExpertise } from "@/modules/Home/OurExpertise";
 import { MemoizedOurTeam } from "@/modules/Home/OurTeam";
 import { MemoizedOurVision } from "@/modules/Home/OurVision";
 import { MemoizedWelcomeSection } from "@/modules/Home/WelcomSection";
+import Head from "next/head";
 
 import React from "react";
 
@@ -52,44 +53,65 @@ const expertiseData = [
 
 export default function Home() {
   return (
-    <MemoizedCustomLayOut>
-      <div className="mx-10 max-w-6xl lg:mx-auto !important px-2 pt-44 md:pt-52 ">
-        <MemoizedWelcomeSection
-          title={
-            <p>
-              Welcome to Orange League <br /> Your Digital Transformation
-              Partner
-            </p>
-          }
-          paragraph={` We're here to help you thrive in the digital landscape. With our expertise and dedication, we'll collaborate closely with you to develop tailored solutions that drive results.`}
-          imageUrls={imageUrls}
+    <>
+      <Head>
+        <title>
+          Welcome to Orange LVT - Your Digital Transformation Partner
+        </title>
+        <meta
+          name="description"
+          content="Orange LVT helps enterprises turn their ideas into successful products. Contact us today to learn more about how we can help you build a successful MVP. Leading technology company specializing in digital transformation solutions."
         />
-        <MemoizedOurExpertise
-          text={
-            <p>
-              Our Dynamic Suite of Services <b /> Engineered for Innovation
-            </p>
-          }
+        <meta
+          name="keywords"
+          content="Orange LVT, digital transformation, MVP development, technology company, software development, product development, digital innovation, tech solutions"
         />
-        <div className="mx-auto w-auto lg:max-w-7xl flex  justify-center my-2">
-          <div className="mt-14 grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
-            {expertiseData.map((data) => {
-              return (
-                <React.Fragment key={data.id}>
-                  <MemoizedExpertiseCard
-                    title={data.title}
-                    description={data.description}
-                    imageUrl={data.imageUrl}
-                  />
-                </React.Fragment>
-              );
-            })}
+        <meta name="url" content="https://www.orangeLVT.com/" />
+        <meta name="lang" content="en" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://www.orangeLVT.com/" />
+        <link rel="icon" href="/favicon.png" />
+      </Head>
+
+      <MemoizedCustomLayOut>
+        <div className="mx-10 max-w-6xl lg:mx-auto !important px-2 pt-44 md:pt-52 ">
+          <MemoizedWelcomeSection
+            title={
+              <p>
+                Welcome to Orange League <br /> Your Digital Transformation
+                Partner
+              </p>
+            }
+            paragraph={` We're here to help you thrive in the digital landscape. With our expertise and dedication, we'll collaborate closely with you to develop tailored solutions that drive results.`}
+            imageUrls={imageUrls}
+          />
+          <MemoizedOurExpertise
+            text={
+              <p>
+                Our Dynamic Suite of Services <b /> Engineered for Innovation
+              </p>
+            }
+          />
+          <div className="mx-auto w-auto lg:max-w-7xl flex  justify-center my-2">
+            <div className="mt-14 grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
+              {expertiseData.map((data) => {
+                return (
+                  <React.Fragment key={data.id}>
+                    <MemoizedExpertiseCard
+                      title={data.title}
+                      description={data.description}
+                      imageUrl={data.imageUrl}
+                    />
+                  </React.Fragment>
+                );
+              })}
+            </div>
           </div>
+          <MemoizedIndustriesWeServe />
+          <MemoizedOurTeam />
         </div>
-        <MemoizedIndustriesWeServe />
-        <MemoizedOurTeam />
-      </div>
-      <MemoizedOurVision />
-    </MemoizedCustomLayOut>
+        <MemoizedOurVision />
+      </MemoizedCustomLayOut>
+    </>
   );
 }

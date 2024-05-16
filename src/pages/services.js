@@ -2,6 +2,7 @@ import { MemoizedServicesCard } from "@/SDK/cards/ServicesCard";
 import { MemoizedCustomLayOut } from "@/modules/GenericComponents/CustomLayOut";
 import { MemoizedOurExpertise } from "@/modules/Home/OurExpertise";
 import { MemoizedWelcomeSection } from "@/modules/Home/WelcomSection";
+import Head from "next/head";
 import React from "react";
 
 const serviceCard = [
@@ -75,33 +76,52 @@ const serviceCard = [
 ];
 export default function Services() {
   return (
-    <MemoizedCustomLayOut>
-      <div className="mx-10 max-w-6xl lg:mx-auto !important px-2 pt-44 md:pt-96">
-        <MemoizedWelcomeSection
-          title={
-            <p>
-              Tailored Solutions, Exceptional Results: Elevate Your Business
-              with Orange League
-            </p>
-          }
-          paragraph={` From responsive web design to mobile app development and beyond, we offer tailored services that elevate your brand and engage your audience. Join us on the journey to digital transformation and stay ahead of the competition.`}
+    <>
+      <Head>
+        <title>Our Services - Orange LVT</title>
+        <meta
+          name="description"
+          content="Discover Orange LVT's range of services, including user experience design, frontend development, backend development, mobile development, QA testing, and deployment. Leading technology company offering comprehensive software development services."
         />
-        <MemoizedOurExpertise
-          text={
-            <p>
-              Proven Expertise in <br /> Digital Innovation and Development
-            </p>
-          }
+        <meta
+          name="keywords"
+          content="services, user experience design, frontend development, backend development, mobile development, QA testing, deployment, technology company, software development, tech solutions, digital transformation"
         />
+        <meta name="url" content="https://www.orangeLVT.com/services" />
+        <meta name="lang" content="en" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://www.orangeLVT.com/services" />
+        <link rel="icon" href="/favicon.png" />
+      </Head>
 
-        {serviceCard.map((card, index) => {
-          return (
-            <div className="md:my-12 my-10" key={card.id}>
-              <MemoizedServicesCard card={card} index={index} />
-            </div>
-          );
-        })}
-      </div>
-    </MemoizedCustomLayOut>
+      <MemoizedCustomLayOut>
+        <div className="mx-10 max-w-6xl lg:mx-auto !important px-2 pt-44 md:pt-96">
+          <MemoizedWelcomeSection
+            title={
+              <p>
+                Tailored Solutions, Exceptional Results: Elevate Your Business
+                with Orange League
+              </p>
+            }
+            paragraph={` From responsive web design to mobile app development and beyond, we offer tailored services that elevate your brand and engage your audience. Join us on the journey to digital transformation and stay ahead of the competition.`}
+          />
+          <MemoizedOurExpertise
+            text={
+              <p>
+                Proven Expertise in <br /> Digital Innovation and Development
+              </p>
+            }
+          />
+
+          {serviceCard.map((card, index) => {
+            return (
+              <div className="md:my-12 my-10" key={card.id}>
+                <MemoizedServicesCard card={card} index={index} />
+              </div>
+            );
+          })}
+        </div>
+      </MemoizedCustomLayOut>
+    </>
   );
 }

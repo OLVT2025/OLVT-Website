@@ -2,6 +2,7 @@ import { MemoizedCaseStudyCards } from "@/SDK/cards/CaseStudyCards";
 import { MemoizedCustomLayOut } from "@/modules/GenericComponents/CustomLayOut";
 import { MemoizedOurExpertise } from "@/modules/Home/OurExpertise";
 import { MemoizedWelcomeSection } from "@/modules/Home/WelcomSection";
+import Head from "next/head";
 import React from "react";
 
 const caseStudyData = [
@@ -33,37 +34,58 @@ const caseStudyData = [
 
 const CaseStudies = () => {
   return (
-    <MemoizedCustomLayOut>
-      <div className="md:mx-10 max-w-6xl lg:mx-auto !important px-2 pt-44 md:pt-96">
-        <MemoizedWelcomeSection
-          title={
-            <p>
-              Explore How We've Helped Businesses Thrive With Remarkable Results
-            </p>
-          }
-          paragraph={`Uncover the stories behind our successful projects and learn how we've helped businesses like yours achieve their digital goals. Our case studies provide valuable insights and inspiration for your own digital initiatives.`}
+    <>
+      <Head>
+        <title>Case Studies - Orange LVT</title>
+        <meta
+          name="description"
+          content="Read about Orange LVT's successful case studies and how we've helped businesses achieve their digital goals with exceptional results. Leading technology company showcasing successful digital transformation projects."
         />
-        <MemoizedOurExpertise
-          title="Real-world Success Stories"
-          text={
-            <p>
-              Witness the Transformative Journey of <br /> Our Clients' Success
-            </p>
-          }
+        <meta
+          name="keywords"
+          content="case studies, success stories, digital transformation, technology company, software development, tech solutions, digital innovation"
         />
-        <div className="mx-auto md:mx-0 lg:mx-10 flex flex-col justify-center my-2">
-          <div className="mt-14 grid  grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12">
-            {caseStudyData.map((data) => {
-              return (
-                <React.Fragment key={data.id}>
-                  <MemoizedCaseStudyCards data={data} isButton={true} />
-                </React.Fragment>
-              );
-            })}
+        <meta name="url" content="https://www.orangeLVT.com/case-studies" />
+        <meta name="lang" content="en" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://www.orangeLVT.com/case-studies" />
+        <link rel="icon" href="/favicon.png" />
+      </Head>
+
+      <MemoizedCustomLayOut>
+        <div className="md:mx-10 max-w-6xl lg:mx-auto !important px-2 pt-44 md:pt-96">
+          <MemoizedWelcomeSection
+            title={
+              <p>
+                Explore How We've Helped Businesses Thrive With Remarkable
+                Results
+              </p>
+            }
+            paragraph={`Uncover the stories behind our successful projects and learn how we've helped businesses like yours achieve their digital goals. Our case studies provide valuable insights and inspiration for your own digital initiatives.`}
+          />
+          <MemoizedOurExpertise
+            title="Real-world Success Stories"
+            text={
+              <p>
+                Witness the Transformative Journey of <br /> Our Clients'
+                Success
+              </p>
+            }
+          />
+          <div className="mx-auto md:mx-0 lg:mx-10 flex flex-col justify-center my-2">
+            <div className="mt-14 grid  grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12">
+              {caseStudyData.map((data) => {
+                return (
+                  <React.Fragment key={data.id}>
+                    <MemoizedCaseStudyCards data={data} isButton={true} />
+                  </React.Fragment>
+                );
+              })}
+            </div>
           </div>
         </div>
-      </div>
-    </MemoizedCustomLayOut>
+      </MemoizedCustomLayOut>
+    </>
   );
 };
 

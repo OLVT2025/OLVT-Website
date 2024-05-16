@@ -2,6 +2,7 @@ import { MemoizedTechnologiesCard } from "@/SDK/cards/TechnologiesCard";
 import { MemoizedCustomLayOut } from "@/modules/GenericComponents/CustomLayOut";
 import { MemoizedOurExpertise } from "@/modules/Home/OurExpertise";
 import { MemoizedWelcomeSection } from "@/modules/Home/WelcomSection";
+import Head from "next/head";
 import React from "react";
 
 const techData = [
@@ -72,30 +73,49 @@ const techData = [
 
 export default function Technologies() {
   return (
-    <MemoizedCustomLayOut>
-      <div className="mx-10 max-w-6xl lg:mx-auto  !important px-2 pt-44 md:pt-80">
-        <MemoizedWelcomeSection
-          title={
-            "Navigate the Digital Landscape with Leading Tech-driven Solutions"
-          }
-          paragraph={`Our technology experts are at the forefront of innovation, leveraging AI, IoT, and blockchain to create transformative solutions. Join us in embracing the future and revolutionizing the way you do business in the digital age.`}
+    <>
+      <Head>
+        <title>Technologies We Use - Orange LVT</title>
+        <meta
+          name="description"
+          content="Explore the technologies Orange LVT specializes in, including React JS, Express, MongoDB, Node.js, AWS, GCP, Docker, Postman, Next.js, and more. Top technology company utilizing cutting-edge tech for software development."
         />
-        <MemoizedOurExpertise
-          title="Technologies That  We Are Expert In"
-          style={{ marginTop: "10rem" }}
+        <meta
+          name="keywords"
+          content="technologies, React JS, Express, MongoDB, Node.js, AWS, GCP, Docker, Postman, Next.js, technology company, software development, tech solutions, digital innovation"
         />
-        <div className="mx-auto sm:mx-12 flex flex-col justify-center my-2">
-          <div className="mt-14 grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
-            {techData.map((data) => {
-              return (
-                <React.Fragment key={data.id}>
-                  <MemoizedTechnologiesCard data={data} />
-                </React.Fragment>
-              );
-            })}
+        <meta name="url" content="https://www.orangeLVT.com/technologies" />
+        <meta name="lang" content="en" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://www.orangeLVT.com/technologies" />
+        <link rel="icon" href="/favicon.png" />
+      </Head>
+
+      <MemoizedCustomLayOut>
+        <div className="mx-10 max-w-6xl lg:mx-auto  !important px-2 pt-44 md:pt-80">
+          <MemoizedWelcomeSection
+            title={
+              "Navigate the Digital Landscape with Leading Tech-driven Solutions"
+            }
+            paragraph={`Our technology experts are at the forefront of innovation, leveraging AI, IoT, and blockchain to create transformative solutions. Join us in embracing the future and revolutionizing the way you do business in the digital age.`}
+          />
+          <MemoizedOurExpertise
+            title="Technologies That  We Are Expert In"
+            style={{ marginTop: "10rem" }}
+          />
+          <div className="mx-auto sm:mx-12 flex flex-col justify-center my-2">
+            <div className="mt-14 grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
+              {techData.map((data) => {
+                return (
+                  <React.Fragment key={data.id}>
+                    <MemoizedTechnologiesCard data={data} />
+                  </React.Fragment>
+                );
+              })}
+            </div>
           </div>
         </div>
-      </div>
-    </MemoizedCustomLayOut>
+      </MemoizedCustomLayOut>
+    </>
   );
 }
