@@ -24,8 +24,7 @@ export const AnimatedGradientButton = styled.button`
   &:hover {
     background: linear-gradient(to right, #ffd60c, #f15d27, #ffd60c);
     background-size: 200% 100%;
-    animation: ${hue} 3s infinite;
+    animation: ${hue} 1s infinite;
     font-feature-settings: "kern";
   }
 `;
-

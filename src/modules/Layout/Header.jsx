@@ -60,7 +60,17 @@ function Header(props) {
                 navigate.push(item?.path);
               }}
             >
-              <ListItemText primary={item?.name} />
+              <ListItemText
+                primaryTypographyProps={{
+                  fontWeight:
+                    navigate.pathname === item.path ? "bold" : "normal",
+                  fontSize: "16px",
+                  color: `${
+                    navigate.pathname === item.path ? "#FFD60C" : "#1D1D1D"
+                  }`,
+                }}
+                primary={item.name}
+              />
             </ListItemButton>
           </ListItem>
         ))}
@@ -76,21 +86,21 @@ function Header(props) {
       <AppBar
         position="fixed"
         sx={{
+          
           boxShadow: "none",
           bgcolor: "#fff",
-          paddingTop: { xs: "1em", md: "2em" },
+          paddingTop: { xs: "1em",  },
           paddingLeft: { lg: "8rem" },
           paddingRight: { lg: "8rem" },
+
         }}
       >
         <Toolbar
           sx={{
-            width:'100%',
+            width: "100%",
             display: "flex",
-            justifyContent: {lg:"space-around", xs:'space-between'},
+            justifyContent: { lg: "space-around", xs: "space-between" },
             alignItems: "center",
-            
-
           }}
         >
           {/* Logo on the left */}
@@ -121,10 +131,10 @@ function Header(props) {
                   onClick={() => navigate.push(item.path)}
                 >
                   <ListItemText
-                    sx={{
+                    primaryTypographyProps={{
+                      fontWeight:
+                        navigate.pathname === item.path ? "bold" : "normal",
                       fontSize: "16px",
-                      fontWeight: "400",
-
                       color: `${
                         navigate.pathname === item.path ? "#FFD60C" : "#1D1D1D"
                       }`,
@@ -203,7 +213,7 @@ const PrimaryButton = ({ onClick, buttonText, buttonIcon, style }) => {
       }}
     >
       <div className="flex justify-center items-center gap-2">
-        <p className="text-base">{`Connect Us`}</p>
+        <p className="text-base">{`Contact Us`}</p>
 
         <ArrowForwardIcon
           style={{ color: "white", width: "1.2rem", height: "1.2rem" }}

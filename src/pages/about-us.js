@@ -155,11 +155,14 @@ const AboutUs = () => {
           />
           <div>
             <p className="text-center max-w-4xl mx-2 sm:mx-auto text-base font-normal">
-              At <span className="text-primary-orange">Orange League</span>, we
-              are passionate about leveraging technology to drive innovation and
-              transform businesses. With a focus on creativity, collaboration,
-              and client satisfaction, we strive to exceed expectations and
-              deliver exceptional results.
+              At{" "}
+              <span className="text-primary-orange font-bold">
+                Orange League
+              </span>
+              , we are passionate about leveraging technology to drive
+              innovation and transform businesses. With a focus on creativity,
+              collaboration, and client satisfaction, we strive to exceed
+              expectations and deliver exceptional results.
             </p>
           </div>
 
@@ -237,8 +240,11 @@ const AboutUs = () => {
 
           <p className="text-center sm:mx-auto text-base font-normal">
             At the heart of
-            <span className="text-primary-orange"> Orange League</span> is a
-            vibrant and inclusive culture that fosters creativity,
+            <span className="text-primary-orange font-bold">
+              {" "}
+              Orange League
+            </span>{" "}
+            is a vibrant and inclusive culture that fosters creativity,
             collaboration, and continuous learning. We believe in empowering our
             team members to take ownership of their work, embrace challenges,
             and strive for excellence. Transparency, open communication, and

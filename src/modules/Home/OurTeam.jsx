@@ -8,23 +8,17 @@ const OurTeam = () => {
     <div className="mt-36 lg:max-w-7xl mx-auto">
       <MemoizedCustomTitle title={"Our Team"} />
 
-      <div className="px-2 mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="px-2 mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 ">
         <MemoizedFounderCard
-          imageUrl={imageUrls.founder1}
-          name="Jeetendera Singh"
+          imageUrl={imageUrls.founder2}
+          name="Abhished kharmatkal"
           position="Founder & CEO"
           experience="16 yrs exp. in Software Development. | Ex-Google  | MBA, IIM Delhi"
         />
 
         <MemoizedFounderCard
           imageUrl={imageUrls.founder1}
-          name="Jeetendera Singh"
-          position="Founder & CEO"
-          experience="16 yrs exp. in Software Development. | Ex-Google  | MBA, IIM Delhi"
-        />
-        <MemoizedFounderCard
-          imageUrl={imageUrls.founder1}
-          name="Jeetendera Singh"
+          name="Nitin Katke"
           position="Founder & CEO"
           experience="16 yrs exp. in Software Development. | Ex-Google  | MBA, IIM Delhi"
         />
