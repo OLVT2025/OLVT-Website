@@ -42,12 +42,12 @@ const WelcomeSection = ({ title, paragraph, imageUrls }) => {
   return (
     <div className="text-center mx-auto">
       <AnimatedGradientText>
-        <div className="mb-7  mx-auto text-center text-xl md:text-3xl lg:text-5xl font-bold md:max-w-5xl">
+        <div className="mb-7 pb-2  mx-auto text-center text-xl md:text-3xl lg:text-5xl font-bold md:max-w-5xl">
           {title}
         </div>
       </AnimatedGradientText>
 
-      <p className="my-7 mx-auto text-center font-normal text-base max-w-sm md:max-w-lg lg:max-w-4xl">
+      <p className="my-9 mx-auto text-center font-normal text-base max-w-sm md:max-w-lg lg:w-3/5 lg:max-w-4xl">
         {paragraph}
       </p>
 
