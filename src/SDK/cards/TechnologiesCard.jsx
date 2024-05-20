@@ -1,7 +1,9 @@
 import React from "react";
 import { MemoizedPrimaryButton } from "../Buttons/PrimaryButton";
+import { useRouter } from "next/router";
 
 const TechnologiesCard = ({ data }) => {
+  const navigate = useRouter()
   return (
     <div className="sm:w-auto w-full bg-accent-white border border-accent-white shadow-lg rounded-2xl relative overflow-hidden tech-card h-full">
       <div className="flex justify-center h-auto md:h-2/5">

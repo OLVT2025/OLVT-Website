@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { MemoizedSecondaryButton } from "@/SDK/Buttons/SecondaryButton";
 import { useRouter } from "next/router";
-
-const ExpertiseCard = ({ title, description, imageUrl }) => {
+ 
+const ExpertiseCard = ({ title, description, imageUrl }) => {   
   const navigate = useRouter();
   const [isHovered, setIsHovered] = useState(false);
   return (
