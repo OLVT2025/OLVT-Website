@@ -15,6 +15,7 @@ const imageUrls = {
   vision: "/images/ourvision.svg",
   founder1 : "/images/Founders/Founder1.svg",
   founder2 : "/images/Founders/Founder2.svg",
+  laptop4x : "/images/laptop__4x.png"
 };
 
 export default imageUrls;

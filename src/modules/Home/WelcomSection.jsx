@@ -47,7 +47,7 @@ const WelcomeSection = ({ title, paragraph, imageUrls }) => {
         </div>
       </AnimatedGradientText>
 
-      <p className="my-9 mx-auto text-center font-normal text-base max-w-sm md:max-w-lg lg:w-3/5 lg:max-w-4xl">
+      <p className="my-8 mx-auto text-center font-normal text-base max-w-sm md:max-w-lg lg:w-3/5 lg:max-w-4xl">
         {paragraph}
       </p>
 
@@ -55,7 +55,8 @@ const WelcomeSection = ({ title, paragraph, imageUrls }) => {
       {imageUrls ? (
         <img
           className="mx-auto mt-8"
-          src={imageUrls.laptop}
+          src={imageUrls.laptop4x}
+          width={"80%"}
           alt="laptop"
         />
       ) : null}
