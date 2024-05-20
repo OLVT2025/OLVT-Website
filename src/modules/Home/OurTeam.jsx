@@ -11,7 +11,7 @@ const OurTeam = () => {
       <div className="px-2 mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 ">
         <MemoizedFounderCard
           imageUrl={imageUrls.founder2}
-          name="Abhishek kharatmal"
+          name="Abhishek Kharatmal"
           position="Founder & CEO"
           experience="16 yrs exp. in Software Development. | Ex-Google  | MBA, IIM Delhi"
         />
