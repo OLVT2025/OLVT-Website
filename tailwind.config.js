@@ -25,6 +25,11 @@ module.exports = {
           grey: "#4A4A4A",
         },
       },
+
+      backgroundSize: {
+        "70-auto": "70% auto",
+        "100-auto": "100% auto",
+      },
     },
   },
   plugins: [],
