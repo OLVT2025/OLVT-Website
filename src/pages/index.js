@@ -74,7 +74,7 @@ export default function Home() {
       </Head>
 
       <MemoizedCustomLayOut>
-        <div className="mx-10 max-w-6xl lg:mx-auto !important px-2 pt-44 md:pt-52 ">
+        <div className="mx-10 max-w-6xl lg:mx-auto font-almarai !important px-2 pt-44 md:pt-52 ">
           <MemoizedWelcomeSection
             title={
               <p>

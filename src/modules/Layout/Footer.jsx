@@ -5,7 +5,7 @@ import { MemoizedContactFrom } from "./ContactFrom";
 
 const Footer = () => {
   return (
-    <div >
+    <div className="font-almarai" >
       <div className=" !important  max-w-7xl mx-auto">
         <MemoizedContactFrom />
       </div>

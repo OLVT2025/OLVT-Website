@@ -68,6 +68,7 @@ function Header(props) {
                   color: `${
                     navigate.pathname === item.path ? "#FFD60C" : "#1D1D1D"
                   }`,
+                  fontFamily: "Almarai",
                 }}
                 primary={item.name}
               />
@@ -86,7 +87,7 @@ function Header(props) {
       <AppBar
         position="fixed"
         sx={{
-          
+        
           boxShadow: "none",
           bgcolor: "#fff",
           paddingTop: { xs: "1em",  },
@@ -138,6 +139,7 @@ function Header(props) {
                       color: `${
                         navigate.pathname === item.path ? "#FFD60C" : "#1D1D1D"
                       }`,
+                      fontFamily: "Almarai",
                     }}
                     primary={item.name}
                   />
