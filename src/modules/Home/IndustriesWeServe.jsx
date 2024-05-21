@@ -16,7 +16,7 @@ const IndustriesWeServe = () => {
             Tailored Solutions, Addressing the Unique Needs of Every Industry
           </h2>
 
-          <p className="mb-6 text-base font-normal text-accent-black">
+          <p className="mb-6  text-sm sm:text-base font-normal text-accent-black">
             We are aware of the particular difficulties faced by every sector.
             Become one of the many business titans who rely on us to provide
             outstanding digital solutions. For this reason, we provide

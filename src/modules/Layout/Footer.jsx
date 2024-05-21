@@ -49,7 +49,7 @@ const Footer = () => {
                 </FooterSection>
               </div>
             </div>
-            <div className="mt-10 mx-auto flex py-2 font-almarai  justify-between  border-t border-accent-white">
+            <div className="mt-10 mx-auto flex text-sm font-normal sm:text-base py-2 font-almarai  justify-between  border-t border-accent-white">
               <div className="flex">
                 <p className="mr-10">Privacy Policy</p>
                 <p>Terms of Conditions</p>
@@ -66,8 +66,8 @@ const Footer = () => {
 
 const FooterSection = ({ title, children }) => {
   return (
-    <div className="flex flex-col gap-y-4">
-      <h1 className="text-primary-orange font-bold">{title}</h1>
+    <div className="flex text-sm sm:text-base font-normal flex-col gap-y-4">
+      <h1 className="text-primary-orange text-base sm:text-xl font-bold">{title}</h1>
       {children}
     </div>
   );

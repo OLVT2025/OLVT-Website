@@ -137,7 +137,7 @@ function Header(props) {
                         navigate.pathname === item.path ? "bold" : "normal",
                       fontSize: "16px",
                       color: `${
-                        navigate.pathname === item.path ? "#FFD60C" : "#1D1D1D"
+                        navigate.pathname === item.path ? "#F15D27" : "#1D1D1D"
                       }`,
                       fontFamily: "Almarai",
                     }}

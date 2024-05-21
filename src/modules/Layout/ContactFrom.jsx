@@ -37,7 +37,7 @@ const ContactFrom = () => {
               Let's Collaborate, Connect with Us Today
             </div>
             <div id="hubspotForm" ref={formRef}></div>
-            <div className="absolute w-3/4 bg-white h-[6rem] sm:h-15 mt-[-90px] sm:mt-[-45px]"></div>
+            <div className="absolute w-4/5 sm:w-3/4 bg-white h-[6rem] sm:h-15 mt-[-90px] sm:mt-[-45px]"></div>
           </div>
           <div className="hidden lg:block lg:w-1/2 ">
             <img

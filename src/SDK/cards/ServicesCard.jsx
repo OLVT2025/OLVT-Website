@@ -2,7 +2,7 @@ import React from "react";
 
 const ServicesCard = ({ card, index }) => {
   return (
-    <div className="lg:mx-auto mx-4 max-w-11/12 lg:max-w-7xl lg:mt-2 lg:mb-6 bg-accent-white ">
+    <div className="lg:mx-auto  mx-4 max-w-11/12 lg:max-w-7xl lg:mt-2 lg:mb-6 bg-accent-white ">
       <div className="order border-accent-white shadow-lg rounded-2xl">
         <div
           key={index}
