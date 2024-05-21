@@ -8,7 +8,7 @@ import React from "react";
 const caseStudyData = [
   {
     id: 1,
-    title: "NSE- Corpositry Dashboard",
+    title: "NSE- Corpository Dashboard",
     desc: `We specialize in harnessing the power of React JS to build dynamic and interactive web applications. Our team of experienced developers is well-versed in React's capabilities and best practices, enabling us to deliver exceptional digital experiences tailored to your business needs.`,
     imgUrl: "/images/caseStudy/NseDashboard.svg",
   },
@@ -53,7 +53,7 @@ const CaseStudies = () => {
       </Head>
 
       <MemoizedCustomLayOut>
-        <div className="md:mx-10 max-w-6xl lg:mx-auto !important px-2 pt-44 md:pt-96">
+        <div className="md:mx-10 sm:max-w-6xl font-almarai lg:mx-auto !important px-2 pt-44 md:pt-52">
           <MemoizedWelcomeSection
             title={
               <p>
@@ -61,8 +61,11 @@ const CaseStudies = () => {
                 Results
               </p>
             }
-            paragraph={`Uncover the stories behind our successful projects and learn how we've helped businesses like yours achieve their digital goals. Our case studies provide valuable insights and inspiration for your own digital initiatives.`}
+            paragraph={`Discover how our successful projects have helped businesses like yours achieve their digital goals. Our case studies offer valuable insights and inspiration for your own digital initiatives.`}
           />
+          <div className="pt-5 sm:pt-20">
+
+          
           <MemoizedOurExpertise
             title="Real-world Success Stories"
             text={
@@ -72,8 +75,9 @@ const CaseStudies = () => {
               </p>
             }
           />
-          <div className="mx-auto md:mx-0 lg:mx-10 flex flex-col justify-center my-2">
-            <div className="mt-14 grid  grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12">
+          </div>
+          <div className=" lg:mx-10 flex flex-col justify-center my-2">
+            <div className=" mt-4 sm:mt-14 grid  grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12">
               {caseStudyData.map((data) => {
                 return (
                   <React.Fragment key={data.id}>
