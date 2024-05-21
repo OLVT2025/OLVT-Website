@@ -9,7 +9,7 @@ const IndustriesWeServe = () => {
       <MemoizedCustomTitle title={"Industries We Serve"} />
 
       <div className="flex flex-col md:flex-row mt-10 md:justify-between">
-        <div className="md:w-1/2  h-96 shadow-xl rounded-3xl"></div>
+        <div className="md:w-1/2  h-96 shadow-xl bg-white rounded-3xl"></div>
 
         <div className="md:w-1/2 my-12 pl-6">
           <h2 className="mb-6 text-2xl font-bold text-accent-black">
