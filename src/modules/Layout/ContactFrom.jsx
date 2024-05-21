@@ -26,11 +26,11 @@ const ContactFrom = () => {
     };
   }, []);
   return (
-    <div className="lg:mx-auto mx-4 w-11/12 lg:w-11/12 lg:mt-2 lg:mb-6 my-8 order border-accent-white shadow-lg rounded-2xl py-2">
+    <div className="lg:mx-auto mx-4 w-11/12 lg:w-11/12 lg:mt-2 lg:mb-6 my-8 order border-accent-white  rounded-2xl py-2">
       <div className="">
         <div className="flex justify-between p-10">
           <div className="w-full lg:w-1/2 ">
-            <div className="text-base font-bold text-center md:text-left hidden lg:block ">
+            <div className="text-2xl mb-6 font-bold text-center md:text-left hidden lg:block ">
               Let's Collaborate, <br /> Connect with Us Today
             </div>
             <div className="text-base font-bold text-center md:text-left block lg:hidden mb-4">

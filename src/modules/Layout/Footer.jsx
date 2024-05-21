@@ -10,9 +10,9 @@ const Footer = () => {
         <MemoizedContactFrom />
       </div>
 
-      <footer className="bg-accent-black py-6 text-accent-white ">
+      <footer className="bg-accent-black pt-6 mb-0 text-accent-white ">
         <div className=" bg-accent-black pt-2 w-full  max-w-7xl mx-auto">
-          <div className="relative w-11/12 mx-auto mt-12 text-accent-white">
+          <div className="relative  w-11/12 mx-auto mt-12 text-accent-white">
             <div className="flex flex-col gap-8  sm:flex-row justify-between">
               <div className="flex w-full sm:w-1/2 flex-row justify-between sm:justify-start sm:flex-col">
                 <p>Logo-socialmedia url</p>
@@ -49,7 +49,7 @@ const Footer = () => {
                 </FooterSection>
               </div>
             </div>
-            <div className="my-10 mx-auto flex py-2 font-almarai   justify-between  border-t border-accent-white">
+            <div className="mt-10 mx-auto flex py-2 font-almarai  justify-between  border-t border-accent-white">
               <div className="flex">
                 <p className="mr-10">Privacy Policy</p>
                 <p>Terms of Conditions</p>

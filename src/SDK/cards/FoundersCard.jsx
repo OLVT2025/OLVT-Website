@@ -2,7 +2,7 @@ import React from "react";
 
 const FounderCard = ({ imageUrl, name, position, experience }) => {
   return (  
-    <div className="flex flex-col sm:flex-row  justify-between items-center shadow-md rounded-3xl">
+    <div className="flex flex-col justify-between  shadow-md rounded-3xl">
       <div>
         <img
           src={imageUrl}
@@ -10,7 +10,7 @@ const FounderCard = ({ imageUrl, name, position, experience }) => {
           className="rounded-lg  bg-cover"
         />
       </div>
-      <div className="p-6 flex flex-col gap-y-2">
+      <div className="p-6 flex  flex-col gap-y-2">
         <h3 className="text-xl md:text-2xl font-bold">{name}</h3>
         <p className="text-sm md:text-base text-accent-purple font-normal">
           {position}

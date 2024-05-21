@@ -13,7 +13,7 @@ const imageUrls = {
   laptop: "/images/Laptop.png",
   founder: "/images/founder1.svg",
   vision: "/images/ourvision.svg",
-  founder1 : "/images/Founders/Founder1.svg",
+  founder1 : "/images/Founders/founder__1.svg",
   founder2 : "/images/Founders/Founder2.svg",
   laptop4x : "/images/laptop__4x.png"
 };

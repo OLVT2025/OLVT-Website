@@ -4,7 +4,7 @@ import { MemoizedCustomTitle } from "../GenericComponents/CustomTitle";
 const OurExpertise = ({ title = "Our Expertise", text, style }) => {
   return (
     <div
-      className="mx-auto flex flex-col justify-center  mb-7 mt-32"
+      className="mx-auto flex flex-col justify-center  mb-7 mt-16"
       style={style}
     >
       {title && <MemoizedCustomTitle title={title} />}
