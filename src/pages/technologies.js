@@ -92,19 +92,22 @@ export default function Technologies() {
       </Head>
 
       <MemoizedCustomLayOut>
-        <div className="mx-10 max-w-6xl lg:mx-auto  !important px-2 pt-44 md:pt-80">
+        <div className="mx-2 sm:max-w-6xl lg:mx-auto font-almarai  !important px-2 pt-44  md:pt-52">
           <MemoizedWelcomeSection
             title={
               "Navigate the Digital Landscape with Leading Tech-driven Solutions"
             }
             paragraph={`Our technology experts are at the forefront of innovation, leveraging AI, IoT, and blockchain to create transformative solutions. Join us in embracing the future and revolutionizing the way you do business in the digital age.`}
           />
+          <div className="sm:pt-16">
+
           <MemoizedOurExpertise
             title="Technologies That  We Are Expert In"
-            style={{ marginTop: "10rem" }}
-          />
-          <div className="mx-auto sm:mx-12 flex flex-col justify-center my-2">
-            <div className="mt-14 grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
+            // style={{ marginTop: "10rem" }}
+            />
+            </div>
+          <div className="mx-auto  sm:mx-12 flex flex-col justify-center my-2">
+            <div className="mt-7 grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
               {techData.map((data) => {
                 return (
                   <React.Fragment key={data.id}>
