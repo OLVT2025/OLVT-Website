@@ -2,11 +2,11 @@ import React from "react";
 
 const ServicesCard = ({ card, index }) => {
   return (
-    <div className="lg:mx-auto  mx-4 max-w-11/12 lg:max-w-7xl lg:mt-2 lg:mb-6 bg-accent-white ">
-      <div className="order border-accent-white shadow-lg rounded-2xl">
+    <div className="lg:mx-auto    mx-4 sm:max-w-11/12 lg:max-w-7xl lg:mt-2 lg:mb-6 bg-accent-white ">
+      <div className="order border-accent-white shadow-equal rounded-3xl">
         <div
           key={index}
-          className={`flex flex-col lg:flex-row px-2 lg:px-4 py-8 ${
+          className={`flex flex-col lg:flex-row px-2 lg:px-4 py-4 ${
             index % 2 === 1 ? "lg:flex-row-reverse" : "lg:flex-row"
           }`}
         >
@@ -23,7 +23,7 @@ const ServicesCard = ({ card, index }) => {
               />
             </div>
             <div className="lg:x-4 lg:mx-auto pl-2  sm:mt-8 sm:pl-6 pt-4 sm:pt-auto">
-              <h4 className="text-base md:text-md lg:text-lg font-bold text-orange-500 mb-2">
+              <h4 className="text-lg  lg:text-xl font-bold text-orange-500 mb-2">
                 {card.title}
               </h4>
               <p className="text-sm lg:text-base font-normal text-black mb-4">

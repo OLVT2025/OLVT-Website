@@ -95,7 +95,7 @@ export default function Services() {
       </Head>
 
       <MemoizedCustomLayOut>
-        <div className="mx-10 max-w-6xl lg:mx-auto !important px-2 pt-44 md:pt-96">
+        <div className="sm:mx-10 sm:max-w-6xl lg:mx-auto !important px-2 pt-44 font-almarai md:pt-52">
           <MemoizedWelcomeSection
             title={
               <p>
@@ -103,19 +103,21 @@ export default function Services() {
                 with Orange League
               </p>
             }
-            paragraph={` From responsive web design to mobile app development and beyond, we offer tailored services that elevate your brand and engage your audience. Join us on the journey to digital transformation and stay ahead of the competition.`}
+            paragraph={`Elevate your brand with our responsive web design and mobile app development services. Join us for digital transformation and stay ahead of the competition.`}
           />
-          <MemoizedOurExpertise
-            text={
-              <p>
-                Proven Expertise in <br /> Digital Innovation and Development
-              </p>
-            }
-          />
+          <div className="sm:pt-20" >
+            <MemoizedOurExpertise
+              text={
+                <p>
+                  Proven Expertise in <br /> Digital Innovation and Development
+                </p>
+              }
+            />
+          </div>
 
           {serviceCard.map((card, index) => {
             return (
-              <div className="md:my-12 my-10" key={card.id}>
+              <div className="md:my-20 my-10" key={card.id}>
                 <MemoizedServicesCard card={card} index={index} />
               </div>
             );

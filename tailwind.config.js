@@ -30,6 +30,10 @@ module.exports = {
         "70-auto": "70% auto",
         "100-auto": "100% auto",
       },
+
+      boxShadow: {
+        'equal': '0 0 10px rgba(0, 0, 0, 0.1)',
+      },
     },
   },
   plugins: [],
