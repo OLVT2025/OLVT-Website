@@ -2,7 +2,7 @@ import React from "react";
 
 const FounderCard = ({ imageUrl, name, position, experience }) => {
   return (  
-    <div className="flex flex-col justify-between  shadow-md rounded-3xl">
+    <div className="flex flex-col justify-between bg-accent-white shadow-md rounded-3xl">
       <div>
         <img
           src={imageUrl}

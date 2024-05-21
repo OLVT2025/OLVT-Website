@@ -41,7 +41,7 @@ const AnimatedGradientText = styled.h1`
 const OurVision = () => {
   return (
     <div
-      className="relative w-full bg-no-repeat bg-center bg-cover mt-36 py-12 px-2 h-[100%] md:h-[100vh]"
+      className="relative font-almarai w-full bg-no-repeat bg-center bg-cover mt-16 sm:mt-36 py-12 px-2 h-[100%] md:h-[100vh]"
       style={{
         backgroundImage: `url(${imageUrls.vision})`,
       }}
@@ -55,11 +55,11 @@ const OurVision = () => {
         
         </h1>
         <AnimatedGradientText>
-        <div  className="my-2 md:my-6 mx-auto text-center text-xl sm:text-5xl font-bold sm:w-2/3 lg:leading-[3.5rem]">
+        <div  className="my-2 md:my-6 mx-auto text-center text-2xl sm:text-5xl font-bold sm:w-2/3 lg:leading-[3.5rem]">
         Empowering Innovation in Product Development with Excellence
         </div>
       </AnimatedGradientText>
-        <p className="mx-auto text-center font-normal text-accent-white text-base sm:w-2/3 my-2 md:my-6">
+        <p className=" mx-4 sm:mx-auto text-center font-light text-accent-white text-sm sm:text-base sm:w-2/3 my-2  md:my-6">
           At the forefront of innovation, we envision developing products that
           redefine industries, enrich lives, and inspire lasting change, fueled
           by creativity, expertise, and a relentless pursuit of excellence.

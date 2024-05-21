@@ -42,19 +42,19 @@ const WelcomeSection = ({ title, paragraph, imageUrls }) => {
   return (
     <div className="text-center mx-auto">
       <AnimatedGradientText>
-        <div  className="mb-5 pb-2  mx-auto text-center text-xl md:text-3xl lg:text-6xl lg:leading-[4.5rem] font-bold md:max-w-5xl">
+        <div  className="mb-5 pb-2  mx-auto text-center text-[1.65rem] md:text-3xl lg:text-6xl lg:leading-[4.5rem] font-bold md:max-w-5xl">
           {title}
         </div>
       </AnimatedGradientText>
 
-      <p className=" mb-12 mx-auto text-center font-normal text-base max-w-sm md:max-w-lg lg:w-3/5 lg:max-w-4xl">
+      <p className=" mb-12 mx-auto text-center font-normal  text-sm sm:text-base max-w-sm md:max-w-lg lg:w-3/5 lg:max-w-4xl">
         {paragraph}
       </p>
 
       <MemoizedPrimaryButton onClick={scrollToFooter} />
       {imageUrls ? (
         <img
-          className="mx-auto mt-36"
+          className="mx-auto mt-16 sm:mt-36"
           src={imageUrls.laptop4x}
           width={"80%"}
           alt="laptop"
