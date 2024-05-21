@@ -96,16 +96,16 @@ const AboutUs = () => {
       </Head>
 
       <MemoizedCustomLayOut>
-        <div className="mx-10 max-w-6xl lg:mx-auto !important px-2 pt-44 md:pt-96">
+        <div className=" mx-4 sm:mx-10 sm:max-w-6xl font-almarai lg:mx-auto !important px-2 pt-44 md:pt-52">
           <MemoizedWelcomeSection
             title={
               <p>
                 Navigate Through Our Legacy of <br /> Innovation and Impact
               </p>
             }
-            paragraph={` Uncover the stories behind our successful projects and learn how we've helped businesses like yours achieve their digital goals. Our case studies provide valuable insights and inspiration for your own digital initiatives.`}
+            paragraph={`Explore our successful projects and see how we've helped businesses achieve their digital goals. Our case studies offer insights and inspiration for your digital initiatives.`}
           />
-          <div className="my-72 sm:my-52">
+          <div className="my-16 sm:my-36">
             <p className="md:max-w-3xl mt-4 mx-auto sm:mx-auto text-center text-lg lg:text-xl font-bold">
               <span className="text-primary-orange font-bold  text-2xl">
                 &ldquo;{" "}
@@ -117,34 +117,26 @@ const AboutUs = () => {
               <span className="text-primary-orange text-2xl ">&rdquo;</span>
             </p>
 
-            <div className="flex flex-col sm:flex-row justify-center max-w-4xl mx-auto mt-14 place-items-center">
-              <div className="flex pl-2 my-4">
-                <img src="/images/test.svg" alt="" className="mr-1 m" />
+            <div className="flex flex-row justify-between sm:justify-center max-w-4xl mx-auto mt-7 sm:mt-14 place-items-center">
+              <div className="flex  pl-2 my-4">
+                <img src="/images/test.svg" alt="" className="mr-1 hidden sm:inline-block" />
                 <div className="ml-4">
-                  <p className="font-bold sm:text-base">Akshay Biswas</p>
+                  <p className="font-bold sm:text-base">Abhishek Kharatmal</p>
                   <p className="font-normal text-xs text-accent-purple">
                     Founder & Ceo, Wipro
                   </p>
                 </div>
               </div>
               <div className="flex sm:mx-10 my-4">
-                <img src="/images/test.svg" alt="" className="mr-1" />
+                <img src="/images/test.svg" alt="" className="mr-1 hidden sm:inline-block" />
                 <div className="ml-4">
-                  <p className="font-bold text-base">Akshay Biswas</p>
+                  <p className="font-bold text-base">Nitin Katke</p>
                   <p className="font-normal text-xs text-accent-purple">
                     Founder & Ceo, Wipro
                   </p>
                 </div>
               </div>
-              <div className="flex my-4">
-                <img src="/images/test.svg" alt="" className="mr-1" />
-                <div className="ml-4">
-                  <p className="font-bold text-base">Akshay Biswas</p>
-                  <p className="font-normal text-xs text-accent-purple">
-                    Founder & Ceo, Wipro
-                  </p>
-                </div>
-              </div>
+             
             </div>
           </div>
           <MemoizedOurExpertise
@@ -166,7 +158,7 @@ const AboutUs = () => {
             </p>
           </div>
 
-          <div className="mt-40  mx-2 md:mx-auto flex flex-col justify-center order border-accent-purple bg-accent-white shadow-lg rounded-2xl">
+          <div className="mt-36   mx-2 md:mx-auto flex flex-col justify-center order border-accent-purple bg-accent-white shadow-lg rounded-2xl">
             <div className="py-8 px-2 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 place-items-center">
               {whoweAreData.map((data) => {
                 return (
@@ -186,14 +178,16 @@ const AboutUs = () => {
             </div>
           </div>
 
-          <MemoizedOurExpertise
-            title="What Do We Do"
-            text={
-              <p className="text-2xl">
-                Tailored Solutions for Your Digital Needs
-              </p>
-            }
-          />
+          <div className="pt-5 sm:pt-20">
+            <MemoizedOurExpertise
+              title="What Do We Do"
+              text={
+                <p className="text-2xl">
+                  Tailored Solutions for Your Digital Needs
+                </p>
+              }
+            />
+          </div>
           <div>
             <p className="text-center  mx-2 sm:mx-auto text-base font-normal">
               We specialize in providing end-to-end digital solutions, including
@@ -228,7 +222,8 @@ const AboutUs = () => {
               })}
             </div>
           </div>
-
+            
+          <div className="pt-5 sm:pt-20">
           <MemoizedOurExpertise
             title="Our Culture"
             text={
@@ -237,6 +232,7 @@ const AboutUs = () => {
               </p>
             }
           />
+          </div>
 
           <p className="text-center sm:mx-auto text-base font-normal">
             At the heart of
