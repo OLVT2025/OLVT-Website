@@ -70,7 +70,7 @@ export default function Home() {
         <meta name="lang" content="en" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://www.orangeleague.in/" />
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href={imageUrls.companyLogo} />
       </Head>
 
       <MemoizedCustomLayOut>

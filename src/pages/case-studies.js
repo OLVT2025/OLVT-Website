@@ -1,4 +1,5 @@
 import { MemoizedCaseStudyCards } from "@/SDK/cards/CaseStudyCards";
+import imageUrls from "@/constants/imageUrls";
 import { MemoizedCustomLayOut } from "@/modules/GenericComponents/CustomLayOut";
 import { MemoizedOurExpertise } from "@/modules/Home/OurExpertise";
 import { MemoizedWelcomeSection } from "@/modules/Home/WelcomSection";
@@ -49,7 +50,7 @@ const CaseStudies = () => {
         <meta name="lang" content="en" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://www.orangeleague.in/case-studies" />
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href={imageUrls.companyLogo} />
       </Head>
 
       <MemoizedCustomLayOut>

@@ -15,7 +15,11 @@ const Footer = () => {
           <div className="relative  w-11/12 mx-auto mt-12 text-accent-white">
             <div className="flex flex-col gap-8  sm:flex-row justify-between">
               <div className="flex w-full sm:w-1/2 flex-row justify-between sm:justify-start sm:flex-col">
-                <p>Logo-socialmedia url</p>
+              <img
+          src={imageUrls.companyLogoWithTitle}
+          alt="Orange League logo"
+          className="w-52 bg-accent-black"
+        />
 
                 <div className="flex gap-x-4 sm:mt-5">
                   <img src={imageUrls.linkedin} alt="linkedin" />

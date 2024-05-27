@@ -1,3 +1,4 @@
+import imageUrls from "@/constants/imageUrls";
 import Head from "next/head";
 import React from "react";
 
@@ -19,7 +20,7 @@ const industries = () => {
         <meta name="lang" content="en" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://www.orangeleague.in/industries" />
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href={imageUrls.companyLogo} />
       </Head>
     </>
   );

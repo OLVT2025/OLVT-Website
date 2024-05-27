@@ -5,6 +5,7 @@ import { MemoizedOurExpertise } from "@/modules/Home/OurExpertise";
 import React from "react";
 import { MemoizedCaseStudyCards } from "@/SDK/cards/CaseStudyCards";
 import Head from "next/head";
+import imageUrls from "@/constants/imageUrls";
 
 const whoweAreData = [
   {
@@ -92,7 +93,7 @@ const AboutUs = () => {
         <meta name="lang" content="en" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://www.orangeleague.in/about-us" />
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href={imageUrls.companyLogo} />
       </Head>
 
       <MemoizedCustomLayOut>

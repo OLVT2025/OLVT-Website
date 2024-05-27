@@ -15,6 +15,7 @@ import { useRouter } from "next/router";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { scrollToFooter } from "@/utils/scrollToFooter";
 import { AnimatedGradientButton } from "@/SDK/Buttons/buttonStyle";
+import imageUrls from "@/constants/imageUrls";
 
 const drawerWidth = 240;
 const navItems = [
@@ -45,7 +46,7 @@ function Header(props) {
         }}
       >
         <img
-          src={"/images/CompanyLogo.svg"}
+          src={imageUrls.companyLogoWithTitle}
           alt="Orange League logo"
           className="h-10"
         />
@@ -111,7 +112,7 @@ function Header(props) {
             onClick={() => navigate.push("/")}
           >
             <img
-              src={"/images/CompanyLogo.svg"}
+               src={imageUrls.companyLogoWithTitle}
               alt="Orange League logo"
               className="h-10 cursor-pointer"
             />

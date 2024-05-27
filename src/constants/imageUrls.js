@@ -9,13 +9,15 @@ const imageUrls = {
   deployment: "/images/Deployment.svg",
   qa: "/images/QA.svg",
   ux: "/images/UX.svg",
-  companyLogo: "/images/CompanyLogo.svg",
+  // companyLogo: "/images/CompanyLogo.svg",
   laptop: "/images/Laptop.png",
   founder: "/images/founder1.svg",
   vision: "/images/ourvision.svg",
   founder1 : "/images/Founders/founder__1.svg",
   founder2 : "/images/Founders/Founder2.svg",
-  laptop4x : "/images/laptop__4x.png"
+  laptop4x : "/images/laptop__4x.png",
+  companyLogoWithTitle : "/images/Logo/logowithTitle.svg",
+  companyLogo : "/images/Logo/logo.svg",
 };
 
 export default imageUrls;

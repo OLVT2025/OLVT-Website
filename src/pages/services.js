@@ -1,4 +1,5 @@
 import { MemoizedServicesCard } from "@/SDK/cards/ServicesCard";
+import imageUrls from "@/constants/imageUrls";
 import { MemoizedCustomLayOut } from "@/modules/GenericComponents/CustomLayOut";
 import { MemoizedOurExpertise } from "@/modules/Home/OurExpertise";
 import { MemoizedWelcomeSection } from "@/modules/Home/WelcomSection";
@@ -91,7 +92,7 @@ export default function Services() {
         <meta name="lang" content="en" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://www.orangeleague.in/services" />
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href={imageUrls.companyLogo} />
       </Head>
 
       <MemoizedCustomLayOut>
