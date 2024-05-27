@@ -18,6 +18,11 @@ const imageUrls = {
   laptop4x : "/images/laptop__4x.png",
   companyLogoWithTitle : "/images/Logo/logowithTitle.svg",
   companyLogo : "/images/Logo/logo.svg",
+  FooterLogo : "images/Logo/footerLogoWithTitle.svg",
+  culturalDiversity : "/images/aboutUs/Culture/CulturalDiversity.svg",
+  funFriday :  "/images/aboutUs/Culture/FunFriday.svg",
+  learnAndGrow :  "/images/aboutUs/Culture/Learn&Grow.svg",
+  passionAndRespect :  "/images/aboutUs/Culture/Passion&Respect.svg",
 };
 
 export default imageUrls;

@@ -107,7 +107,7 @@ export default function Home() {
               })}
             </div>
           </div>
-          <MemoizedIndustriesWeServe />
+          {/* <MemoizedIndustriesWeServe /> */}
           <MemoizedOurTeam />
         </div>
         <MemoizedOurVision />

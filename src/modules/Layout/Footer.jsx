@@ -16,12 +16,12 @@ const Footer = () => {
             <div className="flex flex-col gap-8  sm:flex-row justify-between">
               <div className="flex w-full sm:w-1/2 flex-row justify-between sm:justify-start sm:flex-col">
               <img
-          src={imageUrls.companyLogoWithTitle}
+          src={imageUrls.FooterLogo}
           alt="Orange League logo"
-          className="w-52 bg-accent-black"
+          className=" w-28 sm:w-52 "
         />
 
-                <div className="flex gap-x-4 sm:mt-5">
+                <div className="flex gap-x-4  sm:ml-14 sm:mt-3">
                   <img src={imageUrls.linkedin} alt="linkedin" />
 
                   <img src={imageUrls.twitter} alt="twitter" />
@@ -34,22 +34,23 @@ const Footer = () => {
 
               <div className="flex w-full sm:w-1/2 justify-between">
                 <FooterSection title="Product">
-                  <p>Features</p>
-                  <p>Integrations</p>
-                  <p>Changelog</p>
                   <p>RoadMap</p>
-                </FooterSection>
-
-                <FooterSection title="Company">
-                  <p>Our team</p>
-                  <p>Our values</p>
+                  <p>Services</p>
                   <p>Blog</p>
                 </FooterSection>
 
+                <FooterSection title="Company">
+                  <p>Who we are</p>
+                  <p>Careers</p>
+                  <p>Contact us</p>
+                  <p>Report</p>
+                </FooterSection>
+
                 <FooterSection title="Resources">
-                  <p>Downloads</p>
-                  <p>Documentation</p>
-                  <p>Contacts</p>
+                  <p>Security</p>
+                  <p>Terms</p>
+                  <p>SiteMap</p>
+                  <p>Privacy</p>
                 </FooterSection>
               </div>
             </div>

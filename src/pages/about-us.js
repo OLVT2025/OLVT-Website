@@ -35,25 +35,25 @@ const aboutUsData = [
     id: 1,
     title: "Cultural Diversity",
     desc: `From varied backgrounds emerge our team's cultural tapestry, woven with unique threads of contribution.`,
-    imgUrl: "/images/aboutUs/dummy.svg",
+    imgUrl: imageUrls.culturalDiversity,
   },
   {
     id: 2,
     title: "Learn and Grow",
     desc: `In our community, participation knows no bounds; it permeates every layer of our work, driving multi-dimensional growth for all.`,
-    imgUrl: "/images/aboutUs/dummy.svg",
+    imgUrl: imageUrls.learnAndGrow,
   },
   {
     id: 3,
     title: "Passion and Respect",
     desc: `We're driven by a deep respect for diverse perspectives, igniting our passion to venture into the realms of the unexplored.`,
-    imgUrl: "/images/aboutUs/dummy.svg",
+    imgUrl: imageUrls.passionAndRespect,
   },
   {
     id: 4,
     title: "Offcourse Fun Fridays",
     desc: `At the end of the week, we unwind and recharge with Fun Fridays, celebrating the week's accomplishments with laughter and cheer.`,
-    imgUrl: "/images/aboutUs/dummy.svg",
+    imgUrl: imageUrls.funFriday,
   },
 ];
 
