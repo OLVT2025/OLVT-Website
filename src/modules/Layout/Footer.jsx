@@ -16,8 +16,8 @@ const Footer = () => {
             <div className="flex flex-col gap-8  sm:flex-row justify-between">
               <div className="flex w-full sm:w-1/2 flex-row justify-between sm:justify-start sm:flex-col">
               <img
-          src={imageUrls.FooterLogo}
-          alt="Orange League logo"
+          src={imageUrls.companyLogoWithTitle}
+          alt="Orange League logo" 
           className=" w-28 sm:w-52 "
         />
 
