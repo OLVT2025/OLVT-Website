@@ -48,7 +48,7 @@ function Header(props) {
         <img
           src={imageUrls.companyLogoWithTitle}
           alt="Orange League logo"
-          className="h-10"
+          className="h-[3.25rem] cursor-pointer"
         />
       </Typography>
       <Divider />
@@ -114,7 +114,7 @@ function Header(props) {
             <img
                src={imageUrls.companyLogoWithTitle}
               alt="Orange League logo"
-              className="h-10 cursor-pointer"
+              className="h-[3.25rem] cursor-pointer"
             />
           </Typography>
 

@@ -18,7 +18,7 @@ const Footer = () => {
               <img
           src={imageUrls.companyLogoWithTitle}
           alt="Orange League logo" 
-          className=" w-28 sm:w-52 "
+          className=" cursor-pointer w-28 sm:w-52 "
         />
 
                 <div className="flex gap-x-4  sm:ml-14 sm:mt-3">
