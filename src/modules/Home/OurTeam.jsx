@@ -12,15 +12,15 @@ const OurTeam = () => {
         <MemoizedFounderCard
           imageUrl={imageUrls.founder2}
           name="Abhishek Kharatmal"
-          position="Founder & CEO"
-          experience="16 yrs exp. in Software Development. | Ex-Google  | MBA, IIM Delhi"
+          position="Co-Founder"
+          experience="5+ yrs exp. in  business management, Finance & legal tech | MBA (NMIMS, Mumbai)"
         />
 
         <MemoizedFounderCard
           imageUrl={imageUrls.founder1}
           name="Nitin Katke"
-          position="Founder & CEO"
-          experience="16 yrs exp. in Software Development. | Ex-Google  | MBA, IIM Delhi"
+          position="Co-Founder"
+          experience="13 yrs exp. in Business Strategy & Consulting | MBA, NUS Singapore | M Tech, IIT Delhi"
         />
       </div>
     </div>

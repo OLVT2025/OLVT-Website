@@ -120,20 +120,20 @@ const AboutUs = () => {
 
             <div className="flex flex-row justify-between sm:justify-center max-w-4xl mx-auto mt-7 sm:mt-14 place-items-center">
               <div className="flex  pl-2 my-4">
-                <img src="/images/test.svg" alt="" className="mr-1 hidden sm:inline-block" />
-                <div className="ml-4">
+                <img src={imageUrls.founder2} alt="" className="h-12 rounded-lg bg-red-500 mr-1 hidden sm:inline-block" />
+                <div className="ml-4 flex flex-col justify-center ">
                   <p className="font-bold sm:text-base">Abhishek Kharatmal</p>
                   <p className="font-normal text-xs text-accent-purple">
-                    Founder & Ceo, Wipro
+                  Co-Founder
                   </p>
                 </div>
               </div>
               <div className="flex sm:mx-10 my-4">
-                <img src="/images/test.svg" alt="" className="mr-1 hidden sm:inline-block" />
-                <div className="ml-4">
+                <img src={imageUrls.founder1} alt="" className="h-12 rounded-lgmr-1 hidden sm:inline-block" />
+                <div className="ml-4 flex flex-col justify-center">
                   <p className="font-bold text-base">Nitin Katke</p>
                   <p className="font-normal text-xs text-accent-purple">
-                    Founder & Ceo, Wipro
+                  Co-Founder
                   </p>
                 </div>
               </div>
