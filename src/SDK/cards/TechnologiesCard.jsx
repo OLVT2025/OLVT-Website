@@ -24,7 +24,7 @@ const TechnologiesCard = ({ data }) => {
           <p className="text-sm md:text-base font-normal">{data.desc}</p>
         </div>
         <div className="mx-2">
-          <div className="flex justify-center primary-button  mt-2 mb-2 md:mb-auto ">
+          {/* <div className="flex justify-center primary-button  mt-2 mb-2 md:mb-auto ">
             <MemoizedPrimaryButton
               buttonText="View Case Studies"
               onClick={() => {
@@ -39,7 +39,7 @@ const TechnologiesCard = ({ data }) => {
                 // marginBottom:'-38px'
               }}
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

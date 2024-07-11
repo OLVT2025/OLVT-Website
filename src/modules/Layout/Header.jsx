@@ -23,7 +23,7 @@ const navItems = [
   { name: "Services", path: "/services" },
   { name: "Technologies", path: "/technologies" },
   // { name: "Industries", path: "/industries" },
-  { name: "Case Studies", path: "/case-studies" },
+  // { name: "Case Studies", path: "/case-studies" },
   { name: "About us", path: "/about-us" },
 ];
 
