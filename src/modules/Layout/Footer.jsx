@@ -2,13 +2,19 @@ import React from "react";
 import Link from "next/link";
 import imageUrls from "@/constants/imageUrls";
 import { MemoizedContactFrom } from "./ContactFrom";
+import { useRouter } from "next/router";
 
 const Footer = () => {
+  const router = useRouter();
+  const { pathname } = router;
+
+  // Check if the current route includes '/view-case-studies'
+  const isViewCaseStudiesPage = pathname.includes('/case-studies/');
   return (
     <div className="font-almarai">
-      <div className=" !important  max-w-7xl mx-auto">
+     { !isViewCaseStudiesPage && <div className=" !important  max-w-7xl mx-auto">
         <MemoizedContactFrom />
-      </div>
+      </div>}
 
       <footer className="bg-accent-black pt-6 mb-0 text-accent-white ">
         <div className=" bg-accent-black pt-2 w-full  max-w-7xl mx-auto">
@@ -35,7 +41,7 @@ const Footer = () => {
               </div>
 
               <div className="flex w-full sm:w-1/2 flex-col  justify-center sm:justify-end">
-              <h2 className="text-primary-orange text-center text-base sm:text-xl font-bold">Company</h2>
+              {/* <h2 className="text-primary-orange text-center text-base sm:text-xl font-bold">Company</h2> */}
 
                 <div className="grid grid-cols-2 w-full justify-between">
                   <div className="justify-self-center">
@@ -54,6 +60,9 @@ const Footer = () => {
                     </Link>
                     <Link href="/about-us" className="block mb-2 hover:underline" passHref>
                       About us
+                    </Link>
+                    <Link href="/case-studies" className="block mb-2 hover:underline" passHref>
+                      Case Studies
                     </Link>
                   </div>
                 </div>

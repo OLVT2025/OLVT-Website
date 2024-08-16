@@ -23,7 +23,7 @@ const navItems = [
   { name: "Services", path: "/services" },
   { name: "Technologies", path: "/technologies" },
   // { name: "Industries", path: "/industries" },
-  // { name: "Case Studies", path: "/case-studies" },
+  { name: "Case Studies", path: "/case-studies" },
   { name: "About us", path: "/about-us" },
 ];
 
@@ -64,10 +64,18 @@ function Header(props) {
               <ListItemText
                 primaryTypographyProps={{
                   fontWeight:
-                    navigate.pathname === item.path ? "bold" : "normal",
+                  (item.path === "/case-studies" &&
+                    navigate.pathname.startsWith(item.path)) ||
+                  navigate.pathname === item.path
+                    ? "bold"
+                    : "normal",
                   fontSize: "16px",
                   color: `${
-                    navigate.pathname === item.path ? "#F15D27" : "#1D1D1D"
+                    (item.path === "/case-studies" &&
+                      navigate.pathname.startsWith(item.path)) ||
+                    navigate.pathname === item.path
+                      ? "#F15D27"
+                      : "#1D1D1D"
                   }`,
                   fontFamily: "Almarai",
                 }}
@@ -135,10 +143,18 @@ function Header(props) {
                   <ListItemText
                     primaryTypographyProps={{
                       fontWeight:
-                        navigate.pathname === item.path ? "bold" : "normal",
+                      (item.path === "/case-studies" &&
+                        navigate.pathname.startsWith(item.path)) ||
+                      navigate.pathname === item.path
+                        ? "bold"
+                        : "normal",
                       fontSize: "16px",
                       color: `${
-                        navigate.pathname === item.path ? "#F15D27" : "#1D1D1D"
+                        (item.path === "/case-studies" &&
+                          navigate.pathname.startsWith(item.path)) ||
+                        navigate.pathname === item.path
+                          ? "#F15D27"
+                          : "#1D1D1D"
                       }`,
                       fontFamily: "Almarai",
                     }}

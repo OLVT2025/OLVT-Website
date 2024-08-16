@@ -1,7 +1,9 @@
 import React from "react";
 import { MemoizedPrimaryButton } from "../Buttons/PrimaryButton";
+import { useRouter } from "next/router";
 
 const CaseStudyCards = ({ data, isButton = false }) => {
+  const navigate = useRouter();
   return (
     <div className="mx-auto md:w-full  w-11/12 sm:w-9/12 bg-accent-white border border-accent-white shadow-lg rounded-3xl relative overflow-hidden h-full">
       <div className="flex flex-col justify-center">
@@ -26,7 +28,15 @@ const CaseStudyCards = ({ data, isButton = false }) => {
             <MemoizedPrimaryButton
               buttonText="View Case Studies"
               onClick={() => {
-                navigate("/services");
+                localStorage.setItem(
+                  "caseStudyID",
+                  JSON.stringify(data?.caseStudyID)
+                );
+                const caseStudyName = data.title
+                  .toLowerCase()
+                  ?.split(" ")
+                  ?.join("-");
+                navigate.push(`/case-studies/${caseStudyName}`);
               }}
               style={{
                 fontWeight: "400",

@@ -38,7 +38,7 @@ const AnimatedGradientText = styled.h1`
   }
 `;
 
-const WelcomeSection = ({ title, paragraph, imageUrls }) => {
+const WelcomeSection = ({ title, paragraph, imageUrls , showButton = true}) => {
   return (
     <div className="text-center mx-auto">
       <AnimatedGradientText>
@@ -51,7 +51,7 @@ const WelcomeSection = ({ title, paragraph, imageUrls }) => {
         {paragraph}
       </p>
 
-      <MemoizedPrimaryButton onClick={scrollToFooter} />
+      { showButton && <MemoizedPrimaryButton onClick={scrollToFooter} />}
       {imageUrls ? (
         <img
           className="mx-auto mt-16 sm:mt-36"
