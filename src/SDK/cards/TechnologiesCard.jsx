@@ -21,7 +21,7 @@ const TechnologiesCard = ({ data }) => {
           <p className="text-accent-purple md:text-base text-sm font-bold mb-4">
             {data.frameWorkd}
           </p>
-          <p className="text-sm md:text-base font-normal">{data.desc}</p>
+          <p className="text-sm md:text-base font-normal mb-6 md:mb-3">{data.desc}</p>
         </div>
         <div className="mx-2">
           {/* <div className="flex justify-center primary-button  mt-2 mb-2 md:mb-auto ">
