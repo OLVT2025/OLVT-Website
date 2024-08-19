@@ -25,7 +25,7 @@ const caseStudyData = [
     id: 3,
     title: "Bonzer World",
     desc: `Orange League partnered with Bonzer World to craft a cutting-edge CRM system tailored for travel agents. This CRM system is designed to streamline every aspect of customer management, from handling initial inquiries to booking hotels and arranging transportation.`,
-    imgUrl: "/images/caseStudy/NseDashboard.svg",
+    imgUrl: "/images/caseStudy/BonzerWorld.svg",
     caseStudyID: 3,
   },
   {
@@ -45,9 +45,9 @@ const caseStudyData = [
  
   {
     id: 6,
-    title: "Workwizz",
+    title: "Workwizz", 
     desc: `Workwizz is changing the way clients and freelancers work together online. This case study looks at the platform's development, key features, and challenges, showing how our solutions improve efficiency and growth in the freelance market.`,
-    imgUrl: "/images/caseStudy/NseDashboard.svg",
+    imgUrl: "/images/caseStudy/workwiz.svg",
     caseStudyID: 6,
   },
 ];

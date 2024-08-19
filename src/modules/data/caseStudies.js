@@ -62,10 +62,13 @@ const caseStudies = [
       { title: "CLIENT", info: "NSE" },
       { title: "LOCATION", info: "Mumbai, India" },
       { title: "INDUSTRY", info: "Financial Education and Trading" },
-    
-      { title: "TECHNOLOGIES", info: ":React Native,Nodejs,Oracle,AWS EC2, AWS RDS , AWS Amplify ,  Nginx" },
+
+      {
+        title: "TECHNOLOGIES",
+        info: ":React Native,Nodejs,Oracle,AWS EC2, AWS RDS , AWS Amplify ,  Nginx",
+      },
     ],
-    imageUrlList: [`${imageUrls?.laptop}`, `${imageUrls?.laptop}`],
+    imageUrlList: [`${imageUrls?.nseLearningImg1}`, `${imageUrls?.nseLearningImg2}`],
     // pdfLink:
     //   "https://tts-images-assets.s3.ap-south-1.amazonaws.com/casestudy/Swayer+X+Onelab+Case+Study.pdf",
   },
@@ -119,10 +122,13 @@ const caseStudies = [
       { title: "CLIENT", info: "NSE" },
       { title: "LOCATION", info: "Mumbai, India" },
       { title: "INDUSTRY", info: "Capital Market" },
-     
-      { title: "TECHNOLOGIES", info: "ReactJS, NodeJS, ExpressJS, OracleDB, AWS ( EC2, S3, RDS )" },
+
+      {
+        title: "TECHNOLOGIES",
+        info: "ReactJS, NodeJS, ExpressJS, OracleDB, AWS ( EC2, S3, RDS )",
+      },
     ],
-    imageUrlList: [`${imageUrls?.laptop}`, `${imageUrls?.laptop}`],
+    imageUrlList: [`${imageUrls?.nseDashboardImg1}`, `${imageUrls?.laptop}`],
     // pdfLink:
     //   "https://tts-images-assets.s3.ap-south-1.amazonaws.com/casestudy/Swayer+X+Onelab+Case+Study.pdf",
   },
@@ -191,7 +197,7 @@ const caseStudies = [
         info: "Python, Django , ReactJS , PostgreSQL , AWS (S3, EC2, RDS  )  ,  Nginx",
       },
     ],
-    imageUrlList: [`${imageUrls?.laptop}`, `${imageUrls?.laptop}`],
+    imageUrlList: [`${imageUrls?.bonzerImg2}`, `${imageUrls?.bonzerImg1}`],
     // pdfLink:
     //   "https://tts-images-assets.s3.ap-south-1.amazonaws.com/casestudy/Swayer+X+Onelab+Case+Study.pdf",
   },
@@ -277,7 +283,7 @@ const caseStudies = [
     </ul>
     `,
 
-    imageUrlList: [`${imageUrls?.laptop}`, `${imageUrls?.laptop}`],
+    // imageUrlList: [`${imageUrls?.laptop}`, `${imageUrls?.laptop}`],
   },
   {
     id: 5,
@@ -335,7 +341,7 @@ const caseStudies = [
 <p><strong>Tech Stacks : </strong> Linux Server , React.js , Node.js , Apache , Oracle</p>
 </div>
     `,
-    imageUrlList: [`${imageUrls?.laptop}`, `${imageUrls?.laptop}`],
+    // imageUrlList: [`${imageUrls?.laptop}`, `${imageUrls?.laptop}`],
     // pdfLink:
     //   "https://tts-images-assets.s3.ap-south-1.amazonaws.com/casestudy/Swayer+X+Onelab+Case+Study.pdf",
   },
@@ -348,7 +354,7 @@ const caseStudies = [
     <br/>
     `,
     challengesContent: `
-      <p>The development of Winwave faced several key challenges:</p>
+      <p>The development of Workwizz faced several key challenges:</p>
       <br/>
       <div style="display: flex;  gap: 20px;">
         <ul style="flex: 1; padding: '0px 10px'; list-style-type: none; padding: 0;">
@@ -398,11 +404,10 @@ const caseStudies = [
         info: "ReactJS , ExpressJS , NodeJs, PostgreSQL , AWS EC2,  S3, RDS ",
       },
     ],
-    imageUrlList: [`${imageUrls?.laptop}`, `${imageUrls?.laptop}`],
+    imageUrlList: [`${imageUrls?.workwizImg1}`, `${imageUrls?.workwizImg2}`],
     // pdfLink:
     //   "https://tts-images-assets.s3.ap-south-1.amazonaws.com/casestudy/Swayer+X+Onelab+Case+Study.pdf",
   },
-
 ];
 
 export default caseStudies;

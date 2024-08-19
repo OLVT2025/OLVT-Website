@@ -20,14 +20,18 @@ const AboutProduct = ({ imageUrlList, aboutProductContent , challengesContent, s
 
       <div className={`grid grid-cols-1 sm:grid-cols-2 gap-4 px-2 py-6`}>
       {imageUrlList?.map((imageUrl, index) => (
+         <div key={index} className="w-full h-60  rounded-3xl">
         <img
-          key={index}
+          
           src={imageUrl}
           alt={`${index + 1}`}
-          className="w-full rounded-lg"
+          className="w-full h-full object-cover rounded-3xl"
         />
+        </div>
       ))}
     </div>
+
+    
 
       <div>
         <div className="flex justify-start my-2">

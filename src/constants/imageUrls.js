@@ -20,6 +20,19 @@ const imageUrls = {
   funFriday :  "/images/aboutUs/Culture/FunFriday.svg",
   learnAndGrow :  "/images/aboutUs/Culture/Learn&Grow.svg",
   passionAndRespect :  "/images/aboutUs/Culture/Passion&Respect.svg",
+  
+  nseLearningImg1 : "/images/caseStudy/NseLearningImg1.svg",
+  nseLearningImg2 : "/images/caseStudy/NseLearningImg2.svg",
+
+  nseDashboardImg1 : "/images/caseStudy/NseDashboardImg1.svg",
+
+  bonzerImg1 : "/images/caseStudy/bonzerImg1.svg",
+  bonzerImg2 : "/images/caseStudy/bonzerImg2.svg",
+
+  workwiz : "/images/caseStudy/workwiz.svg",
+  workwizImg1 : "/images/caseStudy/workwizImg1.svg",
+  workwizImg2 : "/images/caseStudy/workwizImg2.svg",
+
 
 };
 
