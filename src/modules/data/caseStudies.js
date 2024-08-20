@@ -283,7 +283,7 @@ const caseStudies = [
     </ul>
     `,
 
-    // imageUrlList: [`${imageUrls?.laptop}`, `${imageUrls?.laptop}`],
+    imageUrlList: [`${imageUrls?.skyWebHubImg1}`, `${imageUrls?.skyWebHubImg2}`],
   },
   {
     id: 5,
@@ -341,7 +341,7 @@ const caseStudies = [
 <p><strong>Tech Stacks : </strong> Linux Server , React.js , Node.js , Apache , Oracle</p>
 </div>
     `,
-    // imageUrlList: [`${imageUrls?.laptop}`, `${imageUrls?.laptop}`],
+    imageUrlList: [`${imageUrls?.onPremiseImg1}`, `${imageUrls?.onPremiseImg2}`],
     // pdfLink:
     //   "https://tts-images-assets.s3.ap-south-1.amazonaws.com/casestudy/Swayer+X+Onelab+Case+Study.pdf",
   },

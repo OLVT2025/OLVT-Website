@@ -25,7 +25,7 @@ const AboutProduct = ({ imageUrlList, aboutProductContent , challengesContent, s
           
           src={imageUrl}
           alt={`${index + 1}`}
-          className="w-full h-full object-cover rounded-3xl"
+          className="w-full h-full object-contain rounded-3xl"
         />
         </div>
       ))}

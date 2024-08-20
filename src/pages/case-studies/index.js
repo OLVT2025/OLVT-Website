@@ -32,7 +32,7 @@ const caseStudyData = [
     id: 4,
     title: "Sky WebHub",
     desc: `This project consisted of creating a web hosting application for deploying code straight from Git repositories, managing custom domains, and achieving scalable, secure hosting. The scanner uses Docker containers to isolate programs, Redis for logging, and AWS ECS for deployment.`,
-    imgUrl: "/images/caseStudy/NseLearning.svg",
+    imgUrl: "/images/caseStudy/skyWebHubImg3.svg",
     caseStudyID: 4,
   },
   {

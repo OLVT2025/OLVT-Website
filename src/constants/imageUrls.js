@@ -34,6 +34,15 @@ const imageUrls = {
   workwizImg2 : "/images/caseStudy/workwizImg2.svg",
 
 
+  onPremiseImg1 : "/images/caseStudy/onPremiseImg1.png",
+  onPremiseImg2 : "/images/caseStudy/onPremiseImg2.png",
+
+  skyWebHubImg1 : "/images/caseStudy/skyWebHubImg1.svg",
+  skyWebHubImg2 : "/images/caseStudy/skyWebHubImg2.svg",
+  skyWebHubImg3 : "/images/caseStudy/skyWebHubImg3.svg",
+
+  wizickImg1 : "/images/caseStudy/wizickImg1.svg",
+  wizickImg2 : "/images/caseStudy/wizickImg2.svg",
 };
 
 export default imageUrls;
