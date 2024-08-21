@@ -3,17 +3,17 @@ import imageUrls from "@/constants/imageUrls";
 const caseStudies = [
   {
     id: 1,
-    title: "NSE Fantasy",
-    desc: "NSE Fantasy is an educational trading platform designed to empower new traders by offering a risk-free environment where they can learn and practice trading concepts.",
+    title: "Fantasy App",
+    desc: "Fantasy App is an educational trading platform designed to empower new traders by offering a risk-free environment where they can learn and practice trading concepts.",
     aboutProductContent: `
-      <p>NSE Fantasy is an educational trading platform designed to empower new traders by offering a risk-free environment where they can learn and practice trading concepts. The platform features interactive quizzes, educational content, and a mock trading environment that simulates real-world trading scenarios. The primary goal is to help novice traders build confidence and avoid the financial risks associated with trading in real markets.</p>
+      <p>Fantasy App is an educational trading platform designed to empower new traders by offering a risk-free environment where they can learn and practice trading concepts. The platform features interactive quizzes, educational content, and a mock trading environment that simulates real-world trading scenarios. The primary goal is to help novice traders build confidence and avoid the financial risks associated with trading in real markets.</p>
     <br/>
     <p>
       Through the platform, users can explore various trading strategies, track their progress, and make informed decisions without the fear of losing real money. The platform's user-friendly interface and engaging content ensure that users have a comprehensive learning experience, which ultimately prepares them for live trading.
     </p>
     `,
     challengesContent: `
-      <p>During the development of NSE Fantasy, the primary challenges included.</p>
+      <p>During the development of Fantasy App, the primary challenges included.</p>
       <br/>
       <ul style="list-style-type: none; padding: 0;">
       <li>
@@ -59,8 +59,6 @@ const caseStudies = [
     `,
 
     projectInfo: [
-      { title: "CLIENT", info: "NSE" },
-      { title: "LOCATION", info: "Mumbai, India" },
       { title: "INDUSTRY", info: "Financial Education and Trading" },
 
       {
@@ -74,10 +72,10 @@ const caseStudies = [
   },
   {
     id: 2,
-    title: "NSE Corpository Dashboard",
-    desc: "The NSE Corprository Dashboard developed to make exploring company profiles easy and insightful.",
+    title: "Corpository Company Dashboard",
+    desc: "The Corpository Company Dashboard developed to make exploring company profiles easy and insightful.",
     aboutProductContent: `
-      <p>The NSE Corpository Dashboard developed to make exploring company profiles easy and insightful. It provides users with access to a wide range of information, including company details, directors, financial data, associates, group companies, and more. This case study delves into how we brought this project to life, highlighting the key features and the challenges we faced along the way.</p>
+      <p>The Corpository Company Dashboard developed to make exploring company profiles easy and insightful. It provides users with access to a wide range of information, including company details, directors, financial data, associates, group companies, and more. This case study delves into how we brought this project to life, highlighting the key features and the challenges we faced along the way.</p>
     `,
     challengesContent: `
       <p>The client presented an initial concept with basic wireframes but required expertise to turn this vision into a functional product. The primary challenges were:</p>
@@ -103,12 +101,12 @@ const caseStudies = [
     <ul style="list-style-type: none; padding: 0;">
       <li>
         <strong>Understanding the Vision</strong>
-        <p>We started by working closely with the NSE to understand what they needed. This helped us create a clear plan that would deliver on their vision while meeting the needs of their users.</p>
+        <p>We started by working closely with the Client to understand what they needed. This helped us create a clear plan that would deliver on their vision while meeting the needs of their users.</p>
       </li>
     <br/>
       <li>
         <strong>Building with Users in Mind</strong>
-        <p>During the development phase, we focused on creating a dashboard that was not only functional but also easy to use. We applied agile development practices, iterating on the design with feedback from the NSE to ensure we were on the right track.</p>
+        <p>During the development phase, we focused on creating a dashboard that was not only functional but also easy to use. We applied agile development practices, iterating on the design with feedback from the Client to ensure we were on the right track.</p>
       </li>
     <br/>
       <li>
@@ -119,8 +117,6 @@ const caseStudies = [
     `,
 
     projectInfo: [
-      { title: "CLIENT", info: "NSE" },
-      { title: "LOCATION", info: "Mumbai, India" },
       { title: "INDUSTRY", info: "Capital Market" },
 
       {

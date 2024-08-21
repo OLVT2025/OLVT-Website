@@ -9,14 +9,14 @@ import React from "react";
 const caseStudyData = [
   {
     id: 1,
-    title: "NSE Fantasy",
-    desc: "NSE Fantasy is an educational trading platform designed to empower new traders by offering a risk-free environment where they can learn and practice trading concepts.",
+    title: "Fantasy App",
+    desc: " Fantasy is an educational trading platform designed to empower new traders by offering a risk-free environment where they can learn and practice trading concepts.",
     imgUrl: "/images/caseStudy/NseLearning.svg",
     caseStudyID: 1,
   },
   {
     id: 2,
-    title: "NSE Corpository Dashboard",
+    title: "Corpository Company Dashboard",
     desc: `We specialize in harnessing the power of React JS to build dynamic and interactive web applications. Our team of experienced developers is well-versed in React's capabilities and best practices, enabling us to deliver exceptional digital experiences tailored to your business needs.`,
     imgUrl: "/images/caseStudy/NseDashboard.svg",
     caseStudyID: 2,
